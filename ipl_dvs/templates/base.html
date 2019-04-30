@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if page_title %}
+        <title>{{ page_title }}</title>
+    {% else %}
+        <title>Home</title>
+    {% endif %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- iconfont -->
+    <link rel="stylesheet" type="text/css" href="{% static 'icon/icofont/css/icofont.css' %}">
+
+    <!-- simple line icon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'icon/simple-line-icons/css/simple-line-icons.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/color/color-1.min.css' %}" id="color"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body class="sidebar-mini fixed">
+<header class="main-header-top hidden-print">
+    <nav class="navbar navbar-static-top">
+        {#        <a href="#" class="logo">IPL</a>#}
+        <!-- Sidebar toggle button--><a href="#" data-toggle="offcanvas" class="sidebar-toggle"></a>
+        <!-- Navbar Right Menu-->
+    </nav>
+</header>
+<aside class="main-sidebar hidden-print ">
+    <section class="sidebar" id="sidebar-scroll">
+
+        <div class="user-panel">
+        </div>
+        <!-- Sidebar Menu-->
+        <ul class="sidebar-menu">
+            <li class="nav-level">Navigation</li>
+            <li class="active treeview">
+                <a class="waves-effect waves-dark" href="index.html">
+                    <i class="icon-speedometer"></i><span> Dashboard</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+</aside>
+<div class="content-wrapper">
+
+    <!-- Container-fluid starts -->
+    <!-- Main content starts -->
+    <div class="container-fluid">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <!-- Main content ends -->
+</div>
+<div class="content-wrapper">
+
+    <!-- Container-fluid starts -->
+    <div class="container-fluid">
+    </div>
+    <!-- Container-fluid ends -->
+</div>
+<!-- Required Jqurey -->
+<script src="{% static 'plugins/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static 'plugins/jquery-ui/jquery-ui.min.js' %}"></script>
+<script src="{% static 'plugins/tether/dist/js/tether.min.js' %}"></script>
+
+<!-- Required Fremwork -->
+<script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'plugins/Waves/waves.min.js' %}"></script>
+
+
+<!-- Scrollbar JS-->
+<script src="{% static 'plugins/jquery-slimscroll/jquery.slimscroll.js' %}"></script>
+<script src="{% static 'plugins/jquery.nicescroll/jquery.nicescroll.min.js' %}"></script>
+
+<!--classic JS-->
+<script src="{% static 'plugins/classie/classie.js' %}"></script>
+<!-- Rickshaw Chart js -->
+<script src="{% static 'plugins/d3/d3.js' %}"></script>
+<script src="{% static 'plugins/rickshaw/rickshaw.js' %}"></script>
+
+<!-- Sparkline charts -->
+<script src="{% static 'plugins/jquery-sparkline/dist/jquery.sparkline.js' %}"></script>
+<script src="{% static 'plugins/waypoints/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'plugins/countdown/js/jquery.counterup.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/main.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'pages/dashboard.js' %}"></script>
+<script type="text/javascript" src="{% static 'pages/elements.js' %}"></script>
+<script src="{% static 'js/menu.min.js' %}"></script>
+
+</body>
+</html>
