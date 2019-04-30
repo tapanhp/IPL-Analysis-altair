@@ -98,4 +98,37 @@
             </div>
         </div>
     </div>
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Matches played in cities</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="citymatch">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript">
+        var data = '';
+        {% if match_city_data %}
+                {% autoescape off %}
+                    var data = {{ match_city_data }}
+                {% endautoescape %}
+                console.log(data);
+                vegaEmbed('#citymatch', data);
+        {% endif %}
+        $(document).ready(function () {
+                console.log(data);
+                vegaEmbed('#citymatch', data);
+            });
+    </script>
 {% endblock %}
