@@ -9,18 +9,34 @@ def index(request):
     alt.renderers.enable('json')
     alt.data_transformers.enable('default', max_rows=None)
     match_count = pd.read_csv('data_files/citywise_match_count.csv', delimiter=',')
-    bars = alt.Chart(match_count).mark_bar().encode(
-        x='city_name:N',
+    player_count = pd.read_csv('data_files/countrywise_player_count.csv', delimiter=',')
+    match_bars = alt.Chart(match_count).mark_bar().encode(
+        x='city:N',
         y='matches:Q',
     ).properties(
         height=300,
         width=900,
+    ).configure_axis(
+        labelFontSize=15,
+        titleFontSize=17,
+    ).configure_axisBottom(
+        labelAngle=-45
+    )
+    player_bars = alt.Chart(player_count).mark_bar().encode(
+        x='country:N',
+        y='players:Q',
+    ).properties(
+        height=300,
+        width=900,
+    ).configure_axis(
+        labelFontSize=15,
+        titleFontSize=17,
+    ).configure_axisBottom(
+        labelAngle=-45
     )
 
-    # bars = base.mark_bar()
-
     context = {
-        'match_city_data': json.dumps(bars.to_dict())
+        'match_city_data': json.dumps(match_bars.to_dict()),
+        'player_country_data': json.dumps(player_bars.to_dict())
     }
-    print(context['match_city_data'])
     return render(request, 'batsman/index.html', context)
