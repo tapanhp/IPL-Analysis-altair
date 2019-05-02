@@ -132,11 +132,30 @@
             </div>
         </div>
     </div>
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Wickets taken by different kind of bowlers</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="wickets">
+                </div>
+            </div>
+
+        </div>
+    </div>
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript">
         var match_data = '';
         var player_data = '';
+        var wickets_data = '';
         {% if match_city_data %}
                 {% autoescape off %}
                     match_data = {{ match_city_data }}
@@ -149,5 +168,13 @@
             {% endautoescape %}
             vegaEmbed('#countryplayer', player_data)
         {% endif %}
+
+
+
+            {% autoescape off %}
+                wickets_data = {{ wicket_bowling_style_data }}
+            {% endautoescape %}
+            vegaEmbed('#wickets', wickets_data)
+
     </script>
 {% endblock %}
