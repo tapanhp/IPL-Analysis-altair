@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top 10 scores of all time</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="top-scores">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top 10 average performers against each team</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="top-scores-team">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript">
+        var top_score_data = '';
+        var top_score_vs_data = '';
+        {% if top_score_data %}
+            {% autoescape off %}
+                top_score_data = {{ top_score_data }}
+            {% endautoescape %}
+        vegaEmbed('#top-scores', top_score_data);
+        {% endif %}
+        {% if top_score_vs_team_data %}
+            {% autoescape off %}
+                top_score_vs_data = {{ top_score_vs_team_data }}
+            {% endautoescape %}
+        vegaEmbed('#top-scores-team', top_score_vs_data);
+        {% endif %}
+    </script>
+{% endblock %}
