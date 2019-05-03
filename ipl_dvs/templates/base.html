@@ -26,13 +26,13 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <style type="text/css">
-       /* .charts {
-            max-width: 100% !important;
-        }
+        /* .charts {
+             max-width: 100% !important;
+         }
 
-        .charts canvas {
-            max-width: 100% !important;
-        } */
+         .charts canvas {
+             max-width: 100% !important;
+         } */
     </style>
 
 </head>
@@ -52,11 +52,19 @@
         <!-- Sidebar Menu-->
         <ul class="sidebar-menu">
             <li class="nav-level">Navigation</li>
-            <li class="active treeview">
-                <a class="waves-effect waves-dark" href="index.html">
-                    <i class="icon-speedometer"></i><span> Dashboard</span>
-                </a>
-            </li>
+            {% if app_name == 'dashboard' %}
+                <li class="active treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'dashboard:home' %}">
+                        <i class="icon-speedometer"></i><span> Dashboard</span>
+                    </a>
+                </li>
+            {% else %}
+                <li class="treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'dashboard:home' %}">
+                        <i class="icon-speedometer"></i><span> Dashboard</span>
+                    </a>
+                </li>
+            {% endif %}
         </ul>
     </section>
 </aside>
