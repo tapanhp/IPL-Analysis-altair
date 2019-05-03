@@ -68,6 +68,7 @@ def index(request):
     context = {
         'match_city_data': json.dumps(match_bars.to_dict()),
         'player_country_data': json.dumps(player_bars.to_dict()),
-        'wicket_bowling_style_data': compound_chart.to_json()
+        'wicket_bowling_style_data': compound_chart.to_json(),
+        'app_name': 'dashboard'
     }
     return render(request, 'batsman/index.html', context)
