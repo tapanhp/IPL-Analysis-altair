@@ -8,10 +8,9 @@ import json
 # Create your views here.
 
 def facet_wrap(subplts, plots_per_row):
-    rows = [subplts[i*plots_per_row:i*plots_per_row+plots_per_row] for i in range(len(subplts)//plots_per_row)]
+    rows = [subplts[i * plots_per_row:i * plots_per_row + plots_per_row] for i in range(len(subplts) // plots_per_row)]
     rows = [alt.hconcat(*charts) for charts in rows]
     return alt.vconcat(*rows).configure_axis(grid=False).configure_view(strokeOpacity=0)
-
 
 
 def index(request):
@@ -70,4 +69,4 @@ def index(request):
         'player_country_data': json.dumps(player_bars.to_dict()),
         'wicket_bowling_style_data': compound_chart.to_json()
     }
-    return render(request, 'batsman/index.html', context)
+    return render(request, 'dashboard/index.html', context)
