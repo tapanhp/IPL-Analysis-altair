@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+
     <div class="row">
         <div class="main-header col-md-3" style="margin-top: 0px;">
             <h4>Players</h4>
@@ -9,8 +10,8 @@
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Detailed analysis
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Batsman vs Team</a>
+            <div class="dropdown-menu navigator" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#batsmanvsteam">Batsman vs Team</a>
                 <a class="dropdown-item" href="#">Batsman vs Season</a>
                 <a class="dropdown-item" href="#">Batsman vs Stadium</a>
                 <a class="dropdown-item" href="#">Bowler and Wickets</a>
@@ -41,6 +42,7 @@
             </div>
         </div>
     </div>
+
     <div class="card">
         <div class="card-block">
             <div class="row m-b-10 dashboard-total-income">
@@ -58,6 +60,44 @@
             </div>
         </div>
     </div>
+
+    <div id="batsmanvsteam">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Batsman vs Team</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Runs made by Players against specific teams.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-6">
+                    <select class="js-example-basic-single">
+                        <optgroup label="Developer">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </optgroup>
+                        <optgroup label="Designer">
+                            <option value="WY">Peter</option>
+                            <option value="WY">Hanry Die</option>
+                            <option value="WY">John Doe</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript">
@@ -75,5 +115,7 @@
             {% endautoescape %}
         vegaEmbed('#top-scores-team', top_score_vs_data);
         {% endif %}
+$(".js-example-basic-single").select2();
+
     </script>
 {% endblock %}
