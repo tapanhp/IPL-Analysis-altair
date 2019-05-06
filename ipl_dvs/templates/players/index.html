@@ -37,7 +37,7 @@
         </div>
         <div class="card-block row">
             <div class="col-sm-12">
-                <div id="top-scores">
+                <div id="top-scores" class="charts">
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
         </div>
         <div class="card-block row">
             <div class="col-sm-12">
-                <div id="top-scores-team">
+                <div id="top-scores-team" class="charts">
                 </div>
             </div>
         </div>
@@ -81,18 +81,30 @@
                 </div>
             </div>
             <div class="card-block row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-5">
                     <select class="js-example-basic-single">
-                        <optgroup label="Developer">
-                            <option value="AL">Alabama</option>
-                            <option value="WY">Wyoming</option>
-                        </optgroup>
-                        <optgroup label="Designer">
-                            <option value="WY">Peter</option>
-                            <option value="WY">Hanry Die</option>
-                            <option value="WY">John Doe</option>
-                        </optgroup>
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
                     </select>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single">
+                        {% if team_list %}
+                            {% for team in team_list %}
+                                <option value="{{ team }}">{{ team }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="batsman-vs-team" class="charts">
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,11 +115,13 @@
     <script type="text/javascript">
         var top_score_data = '';
         var top_score_vs_data = '';
+        var batsman_vs_team_data = '';
         {% if top_score_data %}
             {% autoescape off %}
                 top_score_data = {{ top_score_data }}
+                    console.log(top_score_data);
             {% endautoescape %}
-        vegaEmbed('#top-scores', top_score_data);
+            vegaEmbed('#top-scores', top_score_data);
         {% endif %}
         {% if top_score_vs_team_data %}
             {% autoescape off %}
@@ -115,7 +129,13 @@
             {% endautoescape %}
         vegaEmbed('#top-scores-team', top_score_vs_data);
         {% endif %}
-$(".js-example-basic-single").select2();
+        {% if batsman_vs_team_data %}
+            {% autoescape off %}
+                batsman_vs_team_data = {{ batsman_vs_team_data }}
+            {% endautoescape %}
+        vegaEmbed('#batsman-vs-team', batsman_vs_team_data);
+        {% endif %}
+        $(".js-example-basic-single").select2();
 
     </script>
 {% endblock %}
