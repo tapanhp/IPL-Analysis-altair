@@ -1,5 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
+    <div class="row">
+        <div class="main-header col-md-3" style="margin-top: 0px;">
+            <h4>Players</h4>
+        </div>
+        <div class="dropdown" style="margin-top: 17px; position: fixed; top: 7%; right: 2%; z-index: 10;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Detailed analysis
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Batsman vs Team</a>
+                <a class="dropdown-item" href="#">Batsman vs Season</a>
+                <a class="dropdown-item" href="#">Batsman vs Stadium</a>
+                <a class="dropdown-item" href="#">Bowler and Wickets</a>
+                <a class="dropdown-item" href="#">Bowler vs Teams</a>
+                <a class="dropdown-item" href="#">Bowler vs Season</a>
+                <a class="dropdown-item" href="#">Types of out</a>
+                <a class="dropdown-item" href="#">Man of the match</a>
+                <a class="dropdown-item" href="#">Bowler and Extra runs</a>
+                <a class="dropdown-item" href="#">Captains</a>
+            </div>
+        </div>
+    </div>
+
     <div class="card">
         <div class="card-block">
             <div class="row m-b-10 dashboard-total-income">
