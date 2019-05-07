@@ -82,7 +82,7 @@
             </div>
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single">
+                    <select class="js-example-basic-single" id="ddl_player_btsvt" onchange="updateBatsmanVsTeam()">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -91,7 +91,7 @@
                     </select>
                 </div>
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single">
+                    <select class="js-example-basic-single" id="ddl_team_btsvt" onchange="updateBatsmanVsTeam()">
                         {% if team_list %}
                             {% for team in team_list %}
                                 <option value="{{ team }}">{{ team }}</option>
@@ -137,5 +137,27 @@
         {% endif %}
         $(".js-example-basic-single").select2();
 
+    </script>
+
+    <script type="text/javascript">
+        function updateBatsmanVsTeam() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvt').value,
+                    team: document.getElementById('ddl_team_btsvt').value
+                },
+                url: 'update_batsman_vs_team/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#batsman-vs-team', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
     </script>
 {% endblock %}
