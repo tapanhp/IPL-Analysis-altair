@@ -110,16 +110,66 @@
         </div>
     </div>
 
+    <div id="batsmanvsseason">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Batsman vs season</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Runs made by Players in specific season.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_player_btsvs" onchange="updateBatsmanVsSeason()">
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_season_btsvs" onchange="updateBatsmanVsSeason()">
+                        {% if season_list %}
+                            {% for season in season_list %}
+                                <option value="{{ season }}">{{ season }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="batsman-vs-season" class="charts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript">
         var top_score_data = '';
         var top_score_vs_data = '';
         var batsman_vs_team_data = '';
+        var batsman_vs_season_data = '';
         {% if top_score_data %}
             {% autoescape off %}
                 top_score_data = {{ top_score_data }}
-                    console.log(top_score_data);
+
             {% endautoescape %}
             vegaEmbed('#top-scores', top_score_data);
         {% endif %}
@@ -134,6 +184,12 @@
                 batsman_vs_team_data = {{ batsman_vs_team_data }}
             {% endautoescape %}
         vegaEmbed('#batsman-vs-team', batsman_vs_team_data);
+        {% endif %}
+        {% if batsman_vs_season_data %}
+            {% autoescape off %}
+                batsman_vs_season_data = {{ batsman_vs_season_data }}
+            {% endautoescape %}
+        vegaEmbed('#batsman-vs-season', batsman_vs_season_data);
         {% endif %}
         $(".js-example-basic-single").select2();
 
@@ -152,8 +208,26 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
                     vegaEmbed('#batsman-vs-team', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+        function updateBatsmanVsSeason() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvs').value,
+                    season: document.getElementById('ddl_season_btsvs').value
+                },
+                url: 'update_batsman_vs_season/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#batsman-vs-season', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 }

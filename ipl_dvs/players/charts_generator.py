@@ -87,8 +87,6 @@ def top_runs_vs_teams():
 
 
 def batsman_vs_season(player, season):
-    batsman_vs_seasons = dr.batsman_runs[dr.batsman_runs['player'] == player][
-        dr.batsman_runs['season'] == season]
     highlight = alt.selection(type='multi', on='mouseover',
                               fields=['match'], nearest=True)
 
