@@ -1,9 +1,12 @@
+from django.http import JsonResponse
 from django.shortcuts import render
 import pandas as pd
 import altair as alt
-
+from . import charts_generator
 
 # Create your views here.
+from django.views.decorators.csrf import csrf_exempt
+
 
 def facet_wrap(subplts, plots_per_row):
     rows = [subplts[i * plots_per_row:i * plots_per_row + plots_per_row] for i in range(len(subplts) // plots_per_row)]
@@ -23,7 +26,8 @@ def index(request):
     team_list = pd.read_csv('data_files/teams.csv', delimiter=',')
     team_list.sort_values('Team_Name', inplace=True)
     batsman_vs_team = pd.read_csv('data_files/batsman_vs_team.csv', delimiter=',')
-    batsman_vs_team = batsman_vs_team[batsman_vs_team['player'] == 'V Kohli'][batsman_vs_team['team'] == 'Chennai Super Kings']
+    batsman_vs_team = batsman_vs_team[batsman_vs_team['player'] == 'V Kohli'][
+        batsman_vs_team['team'] == 'Chennai Super Kings']
     top_runs_bars = alt.Chart(top_runs.head(10)).mark_bar().encode(
         x=alt.X('Player:N', sort=alt.EncodingSortField(field='Runs:Q', order='ascending')),
         y='Runs:Q',
@@ -98,3 +102,11 @@ def index(request):
         'team_list': team_list['Team_Name'].tolist()
     }
     return render(request, 'players/index.html', context)
+
+
+@csrf_exempt
+def update_batsman_vs_team(request):
+    player = request.POST['player']
+    team = request.POST['team']
+    batsman_vs_team_chart = charts_generator.batsman_vs_team(player, team)
+    return JsonResponse(batsman_vs_team_chart.to_dict(), safe=False)
