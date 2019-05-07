@@ -17,6 +17,8 @@ def index(request):
     top_runs_bars = cg.top_runs_all_season()
     compound_chart = cg.top_runs_vs_teams()
     batsman_vs_team_chart = cg.batsman_vs_team('A Ashish Reddy', 'Chennai Super Kings')
+    batsman_vs_season_chart = cg.batsman_vs_season('A Ashish Reddy', 1)
+    # print(batsman_vs_season_chart.to_json())
 
     context = {
         'top_score_data': top_runs_bars.to_json(),
@@ -25,7 +27,8 @@ def index(request):
         'app_name': 'players',
         'player_list': player_list['Player_Name'].tolist(),
         'team_list': team_list['Team_Name'].tolist(),
-        'season_list': season_list
+        'season_list': season_list,
+        'batsman_vs_season_data': batsman_vs_season_chart.to_json()
     }
     return render(request, 'players/index.html', context)
 
@@ -43,4 +46,5 @@ def update_batsman_vs_season(request):
     player = request.POST['player']
     season = request.POST['season']
     batsman_vs_season_chart = cg.batsman_vs_season(player, season)
+    # print(batsman_vs_season_chart.to_json())
     return JsonResponse(batsman_vs_season_chart.to_dict(), safe=False)
