@@ -12,20 +12,20 @@ def facet_wrap(subplts, plots_per_row):
 
 
 def batsman_vs_team(player, team):
-    # batsman_vs_team = pd.read_csv('data_files/batsman_vs_team.csv', delimiter=',')
-    batsman_vs_team = dr.batsman_vs_team[dr.batsman_vs_team['player'] == player][
-        dr.batsman_vs_team['team'] == team]
+    batsman_vs_teams = dr.batsman_runs[dr.batsman_runs['player'] == player][
+        dr.batsman_runs['team'] == team]
     highlight = alt.selection(type='multi', on='mouseover',
-                              fields=['season'], nearest=True)
+                              fields=['match'], nearest=True)
 
-    batsman_vs_team_base = alt.Chart(batsman_vs_team).encode(
+    batsman_vs_team_base = alt.Chart(batsman_vs_teams).encode(
         x='match:O',
         y='runs:Q',
         tooltip=['player', 'runs', 'season'],
     )
 
     batsman_vs_team_points = batsman_vs_team_base.mark_circle().encode(
-        opacity=alt.value(0),
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(1)),
+        size=alt.condition(~highlight, alt.value(70), alt.value(140))
     ).add_selection(
         highlight,
     ).properties(
@@ -34,8 +34,8 @@ def batsman_vs_team(player, team):
     )
 
     batsman_vs_team_lines = batsman_vs_team_base.mark_line(point=True).encode(
-        opacity=alt.condition(~highlight, alt.value(1), alt.value(1)),
-        size=alt.condition(~highlight, alt.value(5), alt.value(5))
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(0.7)),
+        size=alt.condition(~highlight, alt.value(2), alt.value(2))
     )
     return batsman_vs_team_points + batsman_vs_team_lines
 
@@ -84,3 +84,32 @@ def top_runs_vs_teams():
         filled=True,
         opacity=1
     )
+
+
+def batsman_vs_season(player, season):
+    batsman_vs_seasons = dr.batsman_runs[dr.batsman_runs['player'] == player][
+        dr.batsman_runs['season'] == season]
+    highlight = alt.selection(type='multi', on='mouseover',
+                              fields=['match'], nearest=True)
+
+    batsman_vs_season_base = alt.Chart(batsman_vs_seasons).encode(
+        x='match:O',
+        y='runs:Q',
+        tooltip=['player', 'runs', 'team'],
+    )
+
+    batsman_vs_season_points = batsman_vs_season_base.mark_circle().encode(
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(1)),
+        size=alt.condition(~highlight, alt.value(70), alt.value(140))
+    ).add_selection(
+        highlight,
+    ).properties(
+        height=300,
+        width=900
+    )
+
+    batsman_vs_season_lines = batsman_vs_season_base.mark_line(point=True).encode(
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(0.7)),
+        size=alt.condition(~highlight, alt.value(2), alt.value(2))
+    )
+    return batsman_vs_season_points + batsman_vs_season_lines

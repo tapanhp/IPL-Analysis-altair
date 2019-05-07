@@ -1,6 +1,6 @@
 import pandas as pd
 
-batsman_vs_team = pd.read_csv('data_files/batsman_vs_team.csv', delimiter=',')
+batsman_runs = pd.read_csv('data_files/batsman_runs.csv', delimiter=',')
 
 
 top_runs = pd.read_csv('data_files/Top_10_Runs_All_Seasons.csv', delimiter=',')
