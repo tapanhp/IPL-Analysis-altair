@@ -38,6 +38,11 @@
         <div class="card-block row">
             <div class="col-sm-12">
                 <div id="top-scores" class="charts">
+                    {% if top_runs %}
+                        {% autoescape off %}
+                            {{ top_runs }}
+                        {% endautoescape %}
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -242,18 +247,11 @@
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript">
-        var top_score_data = '';
+
         var top_score_vs_data = '';
         var batsman_vs_team_data = '';
         var batsman_vs_season_data = '';
         var batsman_vs_stadium_data = '';
-        {% if top_score_data %}
-            {% autoescape off %}
-                top_score_data = {{ top_score_data }}
-
-            {% endautoescape %}
-        vegaEmbed('#top-scores', top_score_data);
-        {% endif %}
         {% if top_score_vs_team_data %}
             {% autoescape off %}
                 top_score_vs_data = {{ top_score_vs_team_data }}

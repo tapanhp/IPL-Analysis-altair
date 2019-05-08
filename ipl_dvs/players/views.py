@@ -18,14 +18,16 @@ def index(request):
     top_10_wicket_table = pd.read_csv('data_files/top_10_wicket_takers.csv', delimiter=',')
     top_10_wicket_table = top_10_wicket_table.to_html(col_space=20, justify='left', index=False)
     stadium_list.sort_values('stadium', inplace=True)
-    top_runs_bars = cg.top_runs_all_season()
+    top_runs = pd.read_csv('data_files/Top_10_Runs_All_Seasons.csv', delimiter=',')
+    top_runs.sort_values('Runs', ascending=False, inplace=True)
+    top_runs = top_runs.head(10).to_html(col_space=20, justify='left', index=False)
     compound_chart = cg.top_runs_vs_teams()
     batsman_vs_team_chart = cg.batsman_vs_team('A Ashish Reddy', 'Chennai Super Kings')
     batsman_vs_season_chart = cg.batsman_vs_season('A Ashish Reddy', 1)
     batsman_vs_stadium_chart = cg.batsman_vs_stadium('A Ashish Reddy', 'Barabati Stadium')
 
     context = {
-        'top_score_data': top_runs_bars.to_json(),
+        'top_runs': top_runs,
         'top_score_vs_team_data': compound_chart.to_json(),
         'batsman_vs_team_data': batsman_vs_team_chart.to_json(),
         'app_name': 'players',
