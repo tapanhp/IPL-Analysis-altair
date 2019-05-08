@@ -25,10 +25,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="{% static 'plugins/select2/dist/css/select2.min.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'plugins/select2/css/s2-docs.css' %}">
-
-
+    <link rel="stylesheet" href="{% static 'plugins/select2/dist/css/select2.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/select2/css/s2-docs.css' %}">
 
 
     <style type="text/css">
@@ -43,8 +41,26 @@
         html {
             scroll-behavior: smooth;
         }
-        .select2{
+
+        .select2 {
             width: 100% !important;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            background-color: #3b5998;
+            color: white;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
         }
     </style>
 
@@ -145,12 +161,12 @@
 <script src="https://cdn.jsdelivr.net/npm/vega@5.3.5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.2.1"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@4.0.0"></script>
-		<script src="{% static 'plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js' %}"></script>
+<script src="{% static 'plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js' %}"></script>
 
 <script src="{% static 'js/altair_embedding.js' %}"></script>
 <script src="{% static 'plugins/select2/dist/js/select2.full.min.js' %}"></script>
 <script src="{% static 'plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js' %}"></script>
-		<script type="text/javascript" src="{% static 'plugins/multi-select/js/jquery.quicksearch.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/multi-select/js/jquery.quicksearch.js' %}"></script>
 
 <script type="text/javascript" src="{% static 'pages/advance-form.js' %}"></script>
 
