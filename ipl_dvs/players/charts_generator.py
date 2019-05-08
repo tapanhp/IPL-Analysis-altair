@@ -141,3 +141,78 @@ def batsman_vs_stadium(player, stadium):
         size=alt.condition(~highlight, alt.value(2), alt.value(2))
     )
     return batsman_vs_stadium_points + batsman_vs_stadium_lines
+
+
+def wickets_vs_teams(player):
+    wickets_against_a_team = dr.wickets_against_a_team[dr.wickets_against_a_team['player'] == player]
+    wickets_vs_teams_bar = alt.Chart(wickets_against_a_team).mark_bar().encode(
+        x='team',
+        y='wickets',
+        tooltip=['player', 'team', 'wickets', 'matches']
+    ).properties(
+        height=300,
+        width=900
+    ).configure_axis(
+        labelFontSize=12,
+        titleFontSize=17,
+        grid=False,
+    ).configure_axisBottom(
+        labelAngle=-45
+    ).configure_view(
+        strokeOpacity=0
+    )
+    wickets_vs_teams_bar.encoding.x.title = 'Vs Team'
+    return wickets_vs_teams_bar
+
+
+def wickets_vs_season(player):
+    wickets_vs_seasons = dr.wickets_in_season[dr.wickets_in_season['player'] == player]
+    wickets_vs_seasons_base = alt.Chart(wickets_vs_seasons).encode(
+        x='season:O',
+        y='wickets:Q',
+        tooltip=['player', 'wickets', 'matches'],
+    )
+    highlight = alt.selection(type='multi', on='mouseover',
+                              fields=['season'], nearest=True)
+
+    wickets_vs_season_points = wickets_vs_seasons_base.mark_circle().encode(
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(1)),
+        size=alt.condition(~highlight, alt.value(70), alt.value(140))
+    ).add_selection(
+        highlight,
+    ).properties(
+        height=300,
+        width=900
+    )
+
+    wickets_vs_season_lines = wickets_vs_seasons_base.mark_line(point=True).encode(
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(0.7)),
+        size=alt.condition(~highlight, alt.value(2), alt.value(2))
+    )
+    return (wickets_vs_season_points + wickets_vs_season_lines).configure_axis(
+        grid=False
+    ).configure_view(
+        strokeOpacity=0
+    ).configure_axisBottom(
+        labelAngle=0
+    )
+
+
+def captains():
+    captain_win_bar = alt.Chart(dr.captain_win_loss).mark_bar(color='steelblue', opacity=0.8).encode(
+        x='sum(wins):Q',
+        y='player:N',
+        tooltip=['player', 'total', 'wins']
+    )
+    captain_loss_bar = alt.Chart(dr.captain_win_loss).mark_bar(color='red', opacity=0.5).encode(
+        x='sum(loss):Q',
+        y='player:N',
+        tooltip=['player', 'total', 'loss']
+    )
+    return (captain_win_bar + captain_loss_bar).configure_axis(
+        grid=False
+    ).configure_view(
+        strokeOpacity=0
+    ).configure_axisBottom(
+        labelAngle=-45
+    ).resolve_scale(x='shared', y='shared')
