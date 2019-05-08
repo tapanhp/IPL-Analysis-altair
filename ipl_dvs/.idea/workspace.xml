@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="added general data reader">
+    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/batsman_vs_team.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/batsman_runs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_files/batsman_runs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/batsman_runs.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/players/charts_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/charts_generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/players/data_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/data_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/players/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/players/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/players/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/players/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/players/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/players/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+            <state relative-caret-position="213">
+              <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -34,10 +37,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/players/charts_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
+            <state relative-caret-position="2074">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
               <folding>
-                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/players/data_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -55,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/players/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -64,11 +67,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/players/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="84" column="114" selection-start-line="84" selection-start-column="114" selection-end-line="84" selection-end-column="114" />
+            <state relative-caret-position="-1634">
+              <caret line="230" column="47" lean-forward="true" selection-start-line="230" selection-start-column="47" selection-end-line="230" selection-end-column="47" />
+              <folding>
+                <element signature="e#1402#1945#0#HTML" />
+                <element signature="e#1951#2517#0#HTML" />
+                <element signature="e#2523#4449#0#HTML" />
+                <element signature="e#4455#6399#0#HTML" />
+                <element signature="e#6410#8354#0#HTML" />
+                <element signature="e#6445#6611#0#HTML" />
+                <element signature="e#6621#8343#0#HTML" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -90,6 +111,7 @@
       <find>user-</find>
       <find>.sidebar .user-panel</find>
       <find>.sidebar</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,13 +134,13 @@
         <option value="$PROJECT_DIR$/templates/batsman/index.html" />
         <option value="$PROJECT_DIR$/ipl_dvs/settings.py" />
         <option value="$PROJECT_DIR$/ipl_dvs/urls.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/dashboard/views.py" />
+        <option value="$PROJECT_DIR$/players/charts_generator.py" />
+        <option value="$PROJECT_DIR$/players/data_reader.py" />
         <option value="$PROJECT_DIR$/players/urls.py" />
         <option value="$PROJECT_DIR$/templates/players/index.html" />
-        <option value="$PROJECT_DIR$/players/data_reader.py" />
-        <option value="$PROJECT_DIR$/players/charts_generator.py" />
         <option value="$PROJECT_DIR$/players/views.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -146,11 +168,6 @@
             <path>
               <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
               <item name="data_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -173,6 +190,12 @@
               <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="players" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,7 +283,8 @@
       <workItem from="1556628568015" duration="301000" />
       <workItem from="1556776479795" duration="12169000" />
       <workItem from="1557133344651" duration="15728000" />
-      <workItem from="1557219708541" duration="6420000" />
+      <workItem from="1557219708541" duration="9809000" />
+      <workItem from="1557292629179" duration="4387000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit, django project setup, theme setup, prepared base layout.">
       <created>1556606919757</created>
@@ -332,11 +356,32 @@
       <option name="project" value="LOCAL" />
       <updated>1557232311156</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated chart ui for batsman vs team">
+      <created>1557234671248</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1557234671248</updated>
+    </task>
+    <task id="LOCAL-00012" summary="batsman vs season complete">
+      <created>1557236745742</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1557236745742</updated>
+    </task>
+    <task id="LOCAL-00013" summary="batsman vs season complete">
+      <created>1557236770206</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1557236770206</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74905000" />
+    <option name="totallyTimeSpent" value="82681000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -351,7 +396,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.2806354" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.25718608" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,7 +462,9 @@
     <MESSAGE value="batsman vs team without filter done" />
     <MESSAGE value="added charts_generator module to generate all charts and batsman vs team done with filter" />
     <MESSAGE value="added general data reader" />
-    <option name="LAST_COMMIT_MESSAGE" value="added general data reader" />
+    <MESSAGE value="updated chart ui for batsman vs team" />
+    <MESSAGE value="batsman vs season complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="batsman vs season complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -478,13 +525,13 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_files/citywise_match_count.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
       <provider editor-type-id="text-editor">
         <state>
           <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
@@ -568,44 +615,10 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="71" selection-start-line="12" selection-start-column="71" selection-end-line="12" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/envs/ipl_dvs/Lib/site-packages/django/views/decorators/csrf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/data_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/players/charts_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="87" lean-forward="true" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -615,24 +628,73 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/charts_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2074">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/stadiums.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/players/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1634">
+          <caret line="230" column="47" lean-forward="true" selection-start-line="230" selection-start-column="47" selection-end-line="230" selection-end-column="47" />
+          <folding>
+            <element signature="e#1402#1945#0#HTML" />
+            <element signature="e#1951#2517#0#HTML" />
+            <element signature="e#2523#4449#0#HTML" />
+            <element signature="e#4455#6399#0#HTML" />
+            <element signature="e#6410#8354#0#HTML" />
+            <element signature="e#6445#6611#0#HTML" />
+            <element signature="e#6621#8343#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/players/data_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/players/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        <state relative-caret-position="213">
+          <caret line="18" column="95" selection-start-line="18" selection-start-column="95" selection-end-line="18" selection-end-column="95" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/players/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="84" column="114" selection-start-line="84" selection-start-column="114" selection-end-line="84" selection-end-column="114" />
         </state>
       </provider>
     </entry>

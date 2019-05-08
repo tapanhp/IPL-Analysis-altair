@@ -14,11 +14,15 @@ def index(request):
     team_list = pd.read_csv('data_files/teams.csv', delimiter=',')
     team_list.sort_values('Team_Name', inplace=True)
     season_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    stadium_list = pd.read_csv('data_files/stadiums.csv', delimiter=',')
+    top_10_wicket_table = pd.read_csv('data_files/top_10_wicket_takers.csv', delimiter=',')
+    top_10_wicket_table = top_10_wicket_table.to_html(col_space=20, justify='left', index=False)
+    stadium_list.sort_values('stadium', inplace=True)
     top_runs_bars = cg.top_runs_all_season()
     compound_chart = cg.top_runs_vs_teams()
     batsman_vs_team_chart = cg.batsman_vs_team('A Ashish Reddy', 'Chennai Super Kings')
     batsman_vs_season_chart = cg.batsman_vs_season('A Ashish Reddy', 1)
-    # print(batsman_vs_season_chart.to_json())
+    batsman_vs_stadium_chart = cg.batsman_vs_stadium('A Ashish Reddy', 'Barabati Stadium')
 
     context = {
         'top_score_data': top_runs_bars.to_json(),
@@ -28,7 +32,10 @@ def index(request):
         'player_list': player_list['Player_Name'].tolist(),
         'team_list': team_list['Team_Name'].tolist(),
         'season_list': season_list,
-        'batsman_vs_season_data': batsman_vs_season_chart.to_json()
+        'stadium_list': stadium_list['stadium'].tolist(),
+        'batsman_vs_season_data': batsman_vs_season_chart.to_json(),
+        'batsman_vs_stadium_data': batsman_vs_stadium_chart.to_json(),
+        'top_10_wickets': top_10_wicket_table
     }
     return render(request, 'players/index.html', context)
 
@@ -48,3 +55,11 @@ def update_batsman_vs_season(request):
     batsman_vs_season_chart = cg.batsman_vs_season(player, season)
     # print(batsman_vs_season_chart.to_json())
     return JsonResponse(batsman_vs_season_chart.to_dict(), safe=False)
+
+
+@csrf_exempt
+def update_batsman_vs_stadium(request):
+    player = request.POST['player']
+    stadium = request.POST['stadium']
+    batsman_vs_stadium_chart = cg.batsman_vs_stadium(player, stadium)
+    return JsonResponse(batsman_vs_stadium_chart.to_dict(), safe=False)

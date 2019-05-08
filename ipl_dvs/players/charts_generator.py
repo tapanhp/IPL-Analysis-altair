@@ -1,4 +1,3 @@
-import pandas as pd
 import altair as alt
 from . import data_reader as dr
 
@@ -20,7 +19,7 @@ def batsman_vs_team(player, team):
     batsman_vs_team_base = alt.Chart(batsman_vs_teams).encode(
         x='match:O',
         y='runs:Q',
-        tooltip=['player', 'runs', 'season'],
+        tooltip=['player', 'runs', 'season', 'stadium'],
     )
 
     batsman_vs_team_points = batsman_vs_team_base.mark_circle().encode(
@@ -95,7 +94,7 @@ def batsman_vs_season(player, season):
     batsman_vs_season_base = alt.Chart(batsman_vs_seasons).encode(
         x='match:O',
         y='runs:Q',
-        tooltip=['player', 'runs', 'team'],
+        tooltip=['player', 'runs', 'team', 'stadium'],
     )
 
     batsman_vs_season_points = batsman_vs_season_base.mark_circle().encode(
@@ -113,3 +112,32 @@ def batsman_vs_season(player, season):
         size=alt.condition(~highlight, alt.value(2), alt.value(2))
     )
     return batsman_vs_season_points + batsman_vs_season_lines
+
+
+def batsman_vs_stadium(player, stadium):
+    batsman_vs_stadiums = dr.batsman_runs[dr.batsman_runs['player'] == player][
+        dr.batsman_runs['stadium'] == stadium]
+    highlight = alt.selection(type='multi', on='mouseover',
+                              fields=['match'], nearest=True)
+
+    batsman_vs_stadium_base = alt.Chart(batsman_vs_stadiums).encode(
+        x='match:O',
+        y='runs:Q',
+        tooltip=['player', 'runs', 'team', 'season'],
+    )
+
+    batsman_vs_stadium_points = batsman_vs_stadium_base.mark_circle().encode(
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(1)),
+        size=alt.condition(~highlight, alt.value(70), alt.value(140))
+    ).add_selection(
+        highlight,
+    ).properties(
+        height=300,
+        width=900
+    )
+
+    batsman_vs_stadium_lines = batsman_vs_stadium_base.mark_line(point=True).encode(
+        opacity=alt.condition(~highlight, alt.value(0.7), alt.value(0.7)),
+        size=alt.condition(~highlight, alt.value(2), alt.value(2))
+    )
+    return batsman_vs_stadium_points + batsman_vs_stadium_lines
