@@ -25,6 +25,9 @@ def index(request):
     batsman_vs_team_chart = cg.batsman_vs_team('A Ashish Reddy', 'Chennai Super Kings')
     batsman_vs_season_chart = cg.batsman_vs_season('A Ashish Reddy', 1)
     batsman_vs_stadium_chart = cg.batsman_vs_stadium('A Ashish Reddy', 'Barabati Stadium')
+    wickets_vs_teams_chart = cg.wickets_vs_teams('A Ashish Reddy')
+    wickets_vs_season_chart = cg.wickets_vs_season('A Ashish Reddy')
+    captain_win_loss_bar = cg.captains()
 
     context = {
         'top_runs': top_runs,
@@ -37,7 +40,10 @@ def index(request):
         'stadium_list': stadium_list['stadium'].tolist(),
         'batsman_vs_season_data': batsman_vs_season_chart.to_json(),
         'batsman_vs_stadium_data': batsman_vs_stadium_chart.to_json(),
-        'top_10_wickets': top_10_wicket_table
+        'top_10_wickets': top_10_wicket_table,
+        'wickets_vs_team_data': wickets_vs_teams_chart.to_json(),
+        'wickets_vs_season_data': wickets_vs_season_chart.to_json(),
+        'captain_win_loss_data': captain_win_loss_bar.to_json()
     }
     return render(request, 'players/index.html', context)
 
@@ -65,3 +71,17 @@ def update_batsman_vs_stadium(request):
     stadium = request.POST['stadium']
     batsman_vs_stadium_chart = cg.batsman_vs_stadium(player, stadium)
     return JsonResponse(batsman_vs_stadium_chart.to_dict(), safe=False)
+
+
+@csrf_exempt
+def update_wickets_vs_team(request):
+    player = request.POST['player']
+    wickets_vs_team_chart = cg.wickets_vs_teams(player)
+    return JsonResponse(wickets_vs_team_chart.to_dict(), safe=False)
+
+
+@csrf_exempt
+def update_wickets_vs_season(request):
+    player = request.POST['player']
+    wickets_vs_season_chart = cg.wickets_vs_season(player)
+    return JsonResponse(wickets_vs_season_chart.to_dict(), safe=False)

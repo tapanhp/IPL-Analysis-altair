@@ -7,4 +7,6 @@ urlpatterns = [
     path('update_batsman_vs_team/', views.update_batsman_vs_team, name='update_batsman_vs_team'),
     path('update_batsman_vs_season/', views.update_batsman_vs_season, name='update_batsman_vs_season'),
     path('update_batsman_vs_stadium/', views.update_batsman_vs_stadium, name='update_batsman_vs_stadium'),
+    path('update_wickets_vs_team/', views.update_wickets_vs_team, name='update_wickets_vs_team'),
+    path('update_wickets_vs_season/', views.update_wickets_vs_season, name='update_wickets_vs_season'),
 ]
