@@ -20,3 +20,4 @@ def win_loss():
     ).configure_axisBottom(
         labelAngle=-45
     ).resolve_scale(x='shared', y='shared').properties(height=300, width=900)
+

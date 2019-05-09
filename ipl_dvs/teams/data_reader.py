@@ -6,3 +6,7 @@ teams = pd.read_csv('data_files/teams.csv', delimiter=',')
 teams.sort_values('Team_Name', inplace=True)
 
 total_runs = pd.read_csv('data_files/team_total_runs.csv', delimiter=',')
+
+total_wickets = pd.read_csv('data_files/team_total_wickets.csv', delimiter=',')
+
+top_10_wicket = pd.read_csv('data_files/team_top_10_wicket_takers.csv', delimiter=',')
