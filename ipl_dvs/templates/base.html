@@ -107,6 +107,19 @@
                     </a>
                 </li>
             {% endif %}
+            {% if app_name == 'teams' %}
+                <li class="active treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'teams:home' %}">
+                        <i class="icon-speedometer"></i><span> Teams</span>
+                    </a>
+                </li>
+            {% else %}
+                <li class="treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'teams:home' %}">
+                        <i class="icon-speedometer"></i><span> Teams</span>
+                    </a>
+                </li>
+            {% endif %}
         </ul>
     </section>
 </aside>
