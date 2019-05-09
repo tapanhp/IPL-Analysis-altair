@@ -1,0 +1,491 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="row">
+        <div class="main-header col-md-3" style="margin-top: 0px;">
+            <h4>Players</h4>
+        </div>
+        <div class="dropdown" style="margin-top: 17px; position: fixed; top: 7%; right: 2%; z-index: 10;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Detailed analysis
+            </button>
+            <div class="dropdown-menu navigator" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#batsmanvsteam">Batsman vs Team</a>
+                <a class="dropdown-item" href="#batsmanvsseason">Batsman vs Season</a>
+                <a class="dropdown-item" href="#batsmanvsstadium">Batsman vs Stadium</a>
+                <a class="dropdown-item" href="#topwickets">Bowler and Wickets</a>
+                <a class="dropdown-item" href="#wicketvsteam">Bowler vs Teams</a>
+                <a class="dropdown-item" href="#wicketvsseason">Bowler vs Season</a>
+                <a class="dropdown-item" href="#captain-win-loss">Captains</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top 10 scores of all time</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="top-scores" class="charts">
+                    {% if top_runs %}
+                        {% autoescape off %}
+                            {{ top_runs }}
+                        {% endautoescape %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top 10 average performers against each team</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="top-scores-team" class="charts">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="batsmanvsteam">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Batsman vs Team</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Runs made by Players against specific teams.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_player_btsvt" onchange="updateBatsmanVsTeam()">
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_team_btsvt" onchange="updateBatsmanVsTeam()">
+                        {% if team_list %}
+                            {% for team in team_list %}
+                                <option value="{{ team }}">{{ team }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="batsman-vs-team" class="charts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="batsmanvsseason">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Batsman vs season</h4>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Runs made by Players in specific season.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_player_btsvs" onchange="updateBatsmanVsSeason()">
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_season_btsvs" onchange="updateBatsmanVsSeason()">
+                        {% if season_list %}
+                            {% for season in season_list %}
+                                <option value="{{ season }}">{{ season }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="batsman-vs-season" class="charts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="batsmanvsstadium">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Batsman vs Stadium</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Runs made by Players in specific stadium.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateBatsmanVsStadium()">
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <select class="js-example-basic-single" id="ddl_stadium_btsvst" onchange="updateBatsmanVsStadium()">
+                        {% if stadium_list %}
+                            {% for stadium in stadium_list %}
+                                <option value="{{ stadium }}">{{ stadium }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="batsman-vs-stadium" class="charts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="topwickets">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Top 10 wicket takers</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Top 10 wicket takers
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="top-wickets" class="charts">
+                        {% if top_10_wickets %}
+                            {% autoescape off %}
+                                {{ top_10_wickets }}
+                            {% endautoescape %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wicketvsteam">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Bowler vs team</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Wickets taken by a bowler against all teams.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-12">
+                    <select class="js-example-basic-single" id="ddl_player_bvst" onchange="updateWicketVsTeam()">
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="wickets-vs-team" class="charts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wicketvsseason">
+        <div class="row">
+            <div class="main-header col-md-3" style="margin-top: 0px;">
+                <h4>Bowler vs season</h4>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-block">
+                <div class="row m-b-10 dashboard-total-income">
+                    <div class="col-sm-6 text-left">
+                        <div class="counter-txt">
+                            <h6>
+                                Wickets taken by a bowler in a season.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12 col-md-12">
+                    <select class="js-example-basic-single" id="ddl_player_bvss" onchange="updateWicketVsSeason()">
+                        {% if player_list %}
+                            {% for player in player_list %}
+                                <option value="{{ player }}">{{ player }}</option>
+                            {% endfor %}
+                        {% endif %}
+                    </select>
+                </div>
+            </div>
+            <div class="card-block row">
+                <div class="col-sm-12">
+                    <div id="wickets-vs-season" class="charts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Total win and loss of captains</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="captain-win-loss" class="charts">
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript">
+
+        var top_score_vs_data = '';
+        var batsman_vs_team_data = '';
+        var batsman_vs_season_data = '';
+        var batsman_vs_stadium_data = '';
+        var wickets_vs_team_data = '';
+        var wickets_vs_season_data = '';
+        var captain_win_loss_data = '';
+        {% if top_score_vs_team_data %}
+            {% autoescape off %}
+                top_score_vs_data = {{ top_score_vs_team_data }}
+            {% endautoescape %}
+        vegaEmbed('#top-scores-team', top_score_vs_data);
+        {% endif %}
+        {% if batsman_vs_team_data %}
+            {% autoescape off %}
+                batsman_vs_team_data = {{ batsman_vs_team_data }}
+            {% endautoescape %}
+        vegaEmbed('#batsman-vs-team', batsman_vs_team_data);
+        {% endif %}
+        {% if batsman_vs_season_data %}
+            {% autoescape off %}
+                batsman_vs_season_data = {{ batsman_vs_season_data }}
+            {% endautoescape %}
+        vegaEmbed('#batsman-vs-season', batsman_vs_season_data);
+        {% endif %}
+        {% if batsman_vs_stadium_data %}
+            {% autoescape off %}
+                batsman_vs_stadium_data = {{ batsman_vs_stadium_data }}
+            {% endautoescape %}
+        vegaEmbed('#batsman-vs-stadium', batsman_vs_stadium_data);
+        {% endif %}
+        {% if wickets_vs_team_data %}
+            {% autoescape off %}
+                wickets_vs_team_data = {{ wickets_vs_team_data }}
+            {% endautoescape %}
+        vegaEmbed('#wickets-vs-team', wickets_vs_team_data);
+        {% endif %}
+        {% if wickets_vs_season_data %}
+            {% autoescape off %}
+                wickets_vs_season_data = {{ wickets_vs_season_data }}
+            {% endautoescape %}
+        vegaEmbed('#wickets-vs-season', wickets_vs_season_data);
+        {% endif %}
+        {% if captain_win_loss_data %}
+            {% autoescape off %}
+                captain_win_loss_data = {{ captain_win_loss_data }}
+            {% endautoescape %}
+        vegaEmbed('#captain-win-loss', captain_win_loss_data);
+        {% endif %}
+        $(".js-example-basic-single").select2();
+
+    </script>
+
+    <script type="text/javascript">
+        function updateBatsmanVsTeam() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvt').value,
+                    team: document.getElementById('ddl_team_btsvt').value
+                },
+                url: 'update_batsman_vs_team/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    vegaEmbed('#batsman-vs-team', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+
+        function updateBatsmanVsSeason() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvs').value,
+                    season: document.getElementById('ddl_season_btsvs').value
+                },
+                url: 'update_batsman_vs_season/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#batsman-vs-season', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+
+        function updateBatsmanVsStadium() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvst').value,
+                    stadium: document.getElementById('ddl_stadium_btsvst').value
+                },
+                url: 'update_batsman_vs_stadium/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+        function updateWicketVsTeam() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_bvst').value
+                },
+                url: 'update_wickets_vs_team/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#wickets-vs-team', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+        function updateWicketVsSeason() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_bvss').value
+                },
+                url: 'update_wickets_vs_season/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#wickets-vs-season', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+    </script>
+{% endblock %}

@@ -10,7 +10,7 @@
     {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
     <!-- iconfont -->
@@ -24,6 +24,45 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/color/color-1.min.css' %}" id="color"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'plugins/select2/dist/css/select2.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'plugins/select2/css/s2-docs.css' %}">
+
+
+    <style type="text/css">
+        .charts {
+            max-width: 100% !important;
+        }
+
+        .charts canvas {
+            max-width: 100% !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .select2 {
+            width: 100% !important;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            background-color: #3b5998;
+            color: white;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
 
 </head>
 <body class="sidebar-mini fixed">
@@ -42,11 +81,32 @@
         <!-- Sidebar Menu-->
         <ul class="sidebar-menu">
             <li class="nav-level">Navigation</li>
-            <li class="active treeview">
-                <a class="waves-effect waves-dark" href="index.html">
-                    <i class="icon-speedometer"></i><span> Dashboard</span>
-                </a>
-            </li>
+            {% if app_name == 'dashboard' %}
+                <li class="active treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'dashboard:home' %}">
+                        <i class="icon-speedometer"></i><span> Dashboard</span>
+                    </a>
+                </li>
+            {% else %}
+                <li class="treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'dashboard:home' %}">
+                        <i class="icon-speedometer"></i><span> Dashboard</span>
+                    </a>
+                </li>
+            {% endif %}
+            {% if app_name == 'players' %}
+                <li class="active treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'players:home' %}">
+                        <i class="icon-speedometer"></i><span> Players</span>
+                    </a>
+                </li>
+            {% else %}
+                <li class="treeview">
+                    <a class="waves-effect waves-dark" href="{% url 'players:home' %}">
+                        <i class="icon-speedometer"></i><span> Players</span>
+                    </a>
+                </li>
+            {% endif %}
         </ul>
     </section>
 </aside>
@@ -97,6 +157,23 @@
 <script type="text/javascript" src="{% static 'pages/dashboard.js' %}"></script>
 <script type="text/javascript" src="{% static 'pages/elements.js' %}"></script>
 <script src="{% static 'js/menu.min.js' %}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vega@5.3.5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@3.2.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@4.0.0"></script>
+<script src="{% static 'plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js' %}"></script>
+
+<script src="{% static 'js/altair_embedding.js' %}"></script>
+<script src="{% static 'plugins/select2/dist/js/select2.full.min.js' %}"></script>
+<script src="{% static 'plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/multi-select/js/jquery.quicksearch.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'pages/advance-form.js' %}"></script>
+
+
+
+{% block scripts %}
+{% endblock %}
 
 </body>
 </html>
