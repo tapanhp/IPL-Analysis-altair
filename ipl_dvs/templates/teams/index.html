@@ -13,7 +13,7 @@
                 <a class="dropdown-item" href="#totalruns">Total runs made by teams</a>
                 <a class="dropdown-item" href="#totalwickets">Total wickets taken by all teams</a>
                 <a class="dropdown-item" href="#toptenwickets">Top 10 wicket takers</a>
-                <a class="dropdown-item" href="#">Results against team</a>
+                <a class="dropdown-item" href="#teamvsteam">Results against team</a>
                 <a class="dropdown-item" href="#">Results in stadiums</a>
                 <a class="dropdown-item" href="#">Runs vs Teams</a>
                 <a class="dropdown-item" href="#">Bowler vs Season</a>
@@ -81,7 +81,7 @@
         </div>
         <div class="card-block row">
             <div class="col-sm-12">
-                <div id="top-scores" class="charts">
+                <div id="top-10-wickets" class="charts">
                     {% if total_wickets_table %}
                         {% autoescape off %}
                             {{ total_wickets_table }}
@@ -91,22 +91,22 @@
             </div>
         </div>
     </div>
-    <div class="card" id="toptenwickets">
+    <div class="card" id="teamvsteam">
         <div class="card-block">
             <div class="row m-b-10 dashboard-total-income">
                 <div class="col-sm-6 text-left">
                     <div class="counter-txt">
-                        <h6>Top 10 wicket takers</h6>
+                        <h6>Team results</h6>
                     </div>
                 </div>
             </div>
         </div>
         <div class="card-block row">
             <div class="col-sm-12">
-                <div id="top-10-wickets" class="charts">
-                    {% if top_ten_wickets_table %}
+                <div id="team-vs-team" class="charts">
+                    {% if team_vs_team_table %}
                         {% autoescape off %}
-                            {{ top_ten_wickets_table }}
+                            {{ team_vs_team_table }}
                         {% endautoescape %}
                     {% endif %}
                 </div>
@@ -143,8 +143,26 @@
                 }
             });
         }
+        function updateTeamVsTeam() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    team: document.getElementById('ddl_team').value
+                },
+                url: 'update_team_vs_team/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    document.getElementById('team-vs-team').innerHTML = '';
+                    document.getElementById('team-vs-team').innerHTML = data;
+                }
+            });
+        }
         function updateStuff() {
-            updateTopWickets()
+            updateTopWickets();
+            updateTeamVsTeam();
 
         }
     </script>
