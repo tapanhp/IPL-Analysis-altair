@@ -14,10 +14,9 @@
                 <a class="dropdown-item" href="#totalwickets">Total wickets taken by all teams</a>
                 <a class="dropdown-item" href="#toptenwickets">Top 10 wicket takers</a>
                 <a class="dropdown-item" href="#teamvsteam">Results against team</a>
-                <a class="dropdown-item" href="#">Results in stadiums</a>
-                <a class="dropdown-item" href="#">Runs vs Teams</a>
-                <a class="dropdown-item" href="#">Bowler vs Season</a>
-                <a class="dropdown-item" href="#">Win margin</a>
+                <a class="dropdown-item" href="#winningsbyinnings">Innings and winnings</a>
+                <a class="dropdown-item" href="#winbyruns">Win by runs</a>
+                <a class="dropdown-item" href="#winbywickets">win by wickets</a>
             </div>
         </div>
         <div class="col-sm-12 col-md-4" style="position: fixed; top: 11%; left: 50%; z-index: 10; transform: translate(-50%);">
@@ -91,6 +90,28 @@
             </div>
         </div>
     </div>
+    <div class="card" id="toptenwickets">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top 10 wicket takers</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="top-ten-wickets" class="charts">
+                    {% if top_ten_wickets_table %}
+                        {% autoescape off %}
+                            {{ top_ten_wickets_table }}
+                        {% endautoescape %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="card" id="teamvsteam">
         <div class="card-block">
             <div class="row m-b-10 dashboard-total-income">
@@ -113,15 +134,86 @@
             </div>
         </div>
     </div>
+    <div class="card" id="winningsbyinnings">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Team winnings by innings</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="team-vs-team" class="charts">
+                    {% if innings_and_wins_table %}
+                        {% autoescape off %}
+                            {{ innings_and_wins_table }}
+                        {% endautoescape %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="winbyruns">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>win margin by runs</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="win-margin-runs" class="charts">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="winbywickets">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>win margin by wickets</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="win-margin-wickets" class="charts">
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript">
         var team_win_loss_data = '';
+        var win_by_runs_data = '';
+        var win_by_wickets_data = '';
         {% if team_win_loss_data %}
             {% autoescape off %}
                 team_win_loss_data = {{ team_win_loss_data }}
             {% endautoescape %}
         vegaEmbed('#team-win-loss', team_win_loss_data);
+        {% endif %}
+        {% if win_by_runs_data %}
+            {% autoescape off %}
+                win_by_runs_data = {{ win_by_runs_data }}
+            {% endautoescape %}
+        vegaEmbed('#win-margin-runs', win_by_runs_data);
+        {% endif %}
+        {% if win_by_wickets_data %}
+            {% autoescape off %}
+                win_by_wickets_data = {{ win_by_wickets_data }}
+            {% endautoescape %}
+        vegaEmbed('#win-margin-wickets', win_by_wickets_data);
         {% endif %}
         $(".js-example-basic-single").select2();
     </script>
@@ -137,9 +229,8 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
-                    document.getElementById('top-10-wickets').innerHTML = '';
-                    document.getElementById('top-10-wickets').innerHTML = data;
+                    document.getElementById('top-ten-wickets').innerHTML = '';
+                    document.getElementById('top-ten-wickets').innerHTML = data;
                 }
             });
         }
@@ -154,16 +245,52 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
                     document.getElementById('team-vs-team').innerHTML = '';
                     document.getElementById('team-vs-team').innerHTML = data;
+                }
+            });
+        }
+        function updateWinByRuns() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    team: document.getElementById('ddl_team').value
+                },
+                url: 'update_win_by_runs/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#win-margin-runs', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                }
+            });
+        }
+        function updateWinByWickets() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    team: document.getElementById('ddl_team').value
+                },
+                url: 'update_win_by_wickets/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    console.log(data);
+                    vegaEmbed('#win-margin-wickets', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
                 }
             });
         }
         function updateStuff() {
             updateTopWickets();
             updateTeamVsTeam();
-
+            updateWinByRuns();
+            updateWinByWickets();
         }
     </script>
 {% endblock %}

@@ -16,6 +16,9 @@ def index(request):
     wickets = wickets[['player', 'wickets']]
     team_vs_team = dr.team_vs_team[dr.team_vs_team['team'] == 'Chennai Super Kings']
     team_vs_team = team_vs_team[['vs', 'wins', 'losses']].to_html(index=False)
+    win_by_runs = cg.win_by_runs('Chennai Super Kings')
+    win_by_wickets = cg.win_by_wickets('Chennai Super Kings')
+    innings_and_wins = dr.innings_and_wins.to_html(index=False)
     context = {
         'app_name': 'teams',
         'team_win_loss_data': win_loss_chart.to_json(),
@@ -24,6 +27,9 @@ def index(request):
         'total_wickets_table': total_wickets,
         'top_ten_wickets_table': wickets.to_html(index=False),
         'team_vs_team_table': team_vs_team,
+        'win_by_runs_data': win_by_runs.to_json(),
+        'win_by_wickets_data': win_by_wickets.to_json(),
+        'innings_and_wins_table': innings_and_wins
     }
     return render(request, 'teams/index.html', context)
 
@@ -42,3 +48,21 @@ def update_team_vs_team(request):
     team_vs_team = dr.team_vs_team[dr.team_vs_team['team'] == team]
     team_vs_team = team_vs_team[['vs', 'wins', 'losses']].to_html(index=False)
     return JsonResponse(team_vs_team, safe=False)
+
+
+@csrf_exempt
+def update_win_by_runs(request):
+    team = request.POST['team']
+    win_by_runs = cg.win_by_runs(team)
+    return JsonResponse(win_by_runs.to_dict(), safe=False)
+
+
+@csrf_exempt
+def update_win_by_wickets(request):
+    if request.POST.get('team', False):
+        team = request.POST['team']
+    else:
+        team = 'Chennai Super Kings'
+        print('team not passed')
+    win_by_wickets = cg.win_by_wickets(team)
+    return JsonResponse(win_by_wickets.to_dict(), safe=False)
