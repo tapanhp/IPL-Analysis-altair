@@ -1,5 +1,86 @@
 {% extends 'base.html' %}
 {% block content %}
+    <div class="row">
+        <div class="main-header col-md-3" style="margin-top: 0px;">
+            <h4>Seasons</h4>
+        </div>
+        <div class="dropdown" style="margin-top: 17px; position: fixed; top: 7%; right: 5%; z-index: 10;">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Detailed analysis
+            </button>
+            <div class="dropdown-menu navigator" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#totalruns">Total runs made by teams</a>
+                <a class="dropdown-item" href="#totalwickets">Total wickets taken by all teams</a>
+                <a class="dropdown-item" href="#toptenwickets">Top 10 wicket takers</a>
+                <a class="dropdown-item" href="#teamvsteam">Results against team</a>
+                <a class="dropdown-item" href="#winningsbyinnings">Innings and winnings</a>
+                <a class="dropdown-item" href="#winbyruns">Win by runs</a>
+                <a class="dropdown-item" href="#winbywickets">win by wickets</a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4"
+             style="position: fixed; top: 11%; left: 50%; z-index: 10; transform: translate(-50%);">
+            <select class="js-example-basic-single" id="ddl_team" onchange="updateStuff()">
+                <option value="1">season 1</option>
+                <option value="2">season 2</option>
+                <option value="3">season 3</option>
+                <option value="4">season 4</option>
+                <option value="5">season 5</option>
+                <option value="6">season 6</option>
+                <option value="7">season 7</option>
+                <option value="8">season 8</option>
+                <option value="9">season 9</option>
+            </select>
+        </div>
+    </div>
+    <div class="card" id="topscores">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top Scores</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div class="charts">
+                    {% if top_runs %}
+                        {% autoescape off %}
+                            {{ top_runs }}
+                        {% endautoescape %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="topwickets">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Top Wickets</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div class="charts">
+                    {% if top_wickets %}
+                        {% autoescape off %}
+                            {{ top_wickets }}
+                        {% endautoescape %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block scripts %}
+    <script type="text/javascript">
+        $(".js-example-basic-single").select2();
+    </script>
 {% endblock %}
