@@ -21,7 +21,7 @@
         </div>
         <div class="col-sm-12 col-md-4"
              style="position: fixed; top: 11%; left: 50%; z-index: 10; transform: translate(-50%);">
-            <select class="js-example-basic-single" id="ddl_team" onchange="updateStuff()">
+            <select class="js-example-basic-single" id="ddl_season" onchange="updateStuff()">
                 <option value="1">season 1</option>
                 <option value="2">season 2</option>
                 <option value="3">season 3</option>
@@ -78,9 +78,53 @@
             </div>
         </div>
     </div>
+    <div class="card" id="teamwins">
+        <div class="card-block">
+            <div class="row m-b-10 dashboard-total-income">
+                <div class="col-sm-6 text-left">
+                    <div class="counter-txt">
+                        <h6>Total wins of teams</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-block row">
+            <div class="col-sm-12">
+                <div id="teamwinstable" class="charts">
+                    {% if team_wins %}
+                        {% autoescape off %}
+                            {{ team_wins }}
+                        {% endautoescape %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript">
         $(".js-example-basic-single").select2();
+    </script>
+    <script type="text/javascript">
+        function UpdateTeamWins() {
+            console.log(document.getElementById('ddl_season').value)
+            $.ajax({
+                type: 'POST',
+                data: {
+                    season: document.getElementById('ddl_season').value
+                },
+                url: 'update_team_wins/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    document.getElementById('teamwinstable').innerHTML = '';
+                    document.getElementById('teamwinstable').innerHTML = data;
+                }
+            });
+        }
+        function updateStuff() {
+            UpdateTeamWins()
+        }
     </script>
 {% endblock %}
