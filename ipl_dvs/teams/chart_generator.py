@@ -21,3 +21,38 @@ def win_loss():
         labelAngle=-45
     ).resolve_scale(x='shared', y='shared').properties(height=300, width=900)
 
+
+def win_by_runs(team):
+    win_by_runs_data = dr.win_by_runs[dr.win_by_runs['winner'] == team]
+    bar = alt.Chart(win_by_runs_data).mark_bar().encode(
+        x=alt.X('match:N', axis=alt.Axis(labelOpacity=0)),
+        y='won by runs:Q',
+        color='won by runs:Q',
+        tooltip=['team 1', 'team 2', 'winner', 'won by runs']
+    ).properties(
+        height=300,
+        width=900,
+    ).configure_axis(
+        grid=False
+    ).configure_view(
+        strokeOpacity=0
+    )
+    return bar
+
+
+def win_by_wickets(team):
+    win_by_wickets_data = dr.win_by_wickets[dr.win_by_wickets['winner'] == team]
+    bar = alt.Chart(win_by_wickets_data).mark_bar().encode(
+        x=alt.X('match:N', axis=alt.Axis(labelOpacity=0)),
+        y='won by wickets:Q',
+        color='won by wickets:Q',
+        tooltip=['team 1', 'team 2', 'winner', 'won by wickets']
+    ).properties(
+        height=300,
+        width=700,
+    ).configure_axis(
+        grid=False
+    ).configure_view(
+        strokeOpacity=0
+    )
+    return bar
