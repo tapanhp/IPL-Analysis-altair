@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="final publishing commit" />
+    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="allowed host and debug false">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipl_dvs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_dvs/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +15,17 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="126" column="45" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,6 +44,7 @@
       <find>.sidebar</find>
       <find>console</find>
       <find>grid</find>
+      <find>mkl-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,7 +71,6 @@
         <option value="$PROJECT_DIR$/players/data_reader.py" />
         <option value="$PROJECT_DIR$/players/charts_generator.py" />
         <option value="$PROJECT_DIR$/templates/players/index.html" />
-        <option value="$PROJECT_DIR$/ipl_dvs/settings.py" />
         <option value="$PROJECT_DIR$/data_files/teams.csv" />
         <option value="$PROJECT_DIR$/teams/chart_generator.py" />
         <option value="$PROJECT_DIR$/teams/urls.py" />
@@ -70,6 +83,7 @@
         <option value="$PROJECT_DIR$/seasons/urls.py" />
         <option value="$PROJECT_DIR$/seasons/views.py" />
         <option value="$PROJECT_DIR$/templates/seasons/index.html" />
+        <option value="$PROJECT_DIR$/ipl_dvs/settings.py" />
       </list>
     </option>
   </component>
@@ -349,11 +363,32 @@
       <option name="project" value="LOCAL" />
       <updated>1558350250710</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added requirements.txt">
+      <created>1558421225162</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1558421225162</updated>
+    </task>
+    <task id="LOCAL-00025" summary="allowed host and debug false">
+      <created>1558421610433</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558421610433</updated>
+    </task>
+    <task id="LOCAL-00026" summary="static change for docker">
+      <created>1558426780190</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558426780190</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122675000" />
+    <option name="totallyTimeSpent" value="125910000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -366,13 +401,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.30635402" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.25718608" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2569558" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.2569558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -381,7 +417,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.2569558" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4844517" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4844517" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -491,7 +527,10 @@
     <MESSAGE value="basic setup of season app" />
     <MESSAGE value="top scores and wicket takers done." />
     <MESSAGE value="website review commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="website review commit" />
+    <MESSAGE value="added requirements.txt" />
+    <MESSAGE value="allowed host and debug false" />
+    <MESSAGE value="static change for docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="static change for docker" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -666,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_files/batsman_runs.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -841,6 +873,13 @@
           <folding>
             <element signature="n#block#1;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="126" column="45" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
         </state>
       </provider>
     </entry>
