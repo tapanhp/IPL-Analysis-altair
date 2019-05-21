@@ -1,13 +1,1068 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="">
+    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="change in urls">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipl_dvs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_dvs/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ipl_dvs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_dvs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/scss/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/static/scss/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/autocomplete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/responsive_rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-viewlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/collapse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/inlines.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/timeparse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-1.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-4.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/color-5.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/inverse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/color/inverse.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/generic-class.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/generic-class.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/generic-class.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/menu.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/responsive.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/svg-weather.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/ico-fonts/css/icofont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/ico-fonts/fonts/icofont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/ico-fonts/fonts/icofont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/ico-fonts/fonts/icofont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/ico-fonts/fonts/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/icofont/css/icofont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/icofont/fonts/icofont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/icofont/fonts/icofont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/icofont/fonts/icofont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/icofont/fonts/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/simple-line-icons/css/simple-line-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/simple-line-icons/fonts/Simple-Line-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/simple-line-icons/fonts/Simple-Line-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/simple-line-icons/fonts/Simple-Line-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/simple-line-icons/fonts/Simple-Line-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/icon/simple-line-icons/fonts/Simple-Line-Icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/ipl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/common-pages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/common-pages.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/menu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/modernizr-custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/modernizr-custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/advance-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/animation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/chart-float.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/chart-morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/counter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/elements-materialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/font-awesome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/iconfonts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/material-icon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/preloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/profile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/range-slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/simple-line-icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/typicon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/pages/weather-icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.colorhelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.crosshair.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.errorbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.fillbetween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.navigate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.selection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.threshold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.flot.time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Flot/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Waves/waves.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/Waves/waves.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/css/bootstrap-datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.az.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ca.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.da.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.de.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.el.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-AU.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-GB.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.et.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fa.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.gl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.he.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.id.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.is.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it-CH.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ja.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ka.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kh.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ko.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.me.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nb.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl-BE.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.no.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ro.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sq.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr-latin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sv.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sw.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.th.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-TW.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-datepicker/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/font/Material-Design-Icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/font/Material-Design-Icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/font/Material-Design-Icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/font/Material-Design-Icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/font/Material-Design-Icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-maxlength/src/bootstrap-maxlength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-multiselect/dist/css/bootstrap-multiselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect-collapsible-groups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-multiselect/dist/js/bootstrap-multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-multiselect/dist/less/bootstrap-multiselect.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput-typeahead.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/assets/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/assets/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/assets/app_bs2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/assets/app_bs3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/assets/cities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/assets/citynames.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/bootstrap-2.3.2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/src/bootstrap-tagsinput-angular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/src/bootstrap-tagsinput-typeahead.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/src/bootstrap-tagsinput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap-tagsinput/src/bootstrap-tagsinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bower-jquery-easyPieChart/dist/easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bower-jquery-easyPieChart/dist/easypiechart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bower-jquery-easyPieChart/dist/jquery.easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bower-jquery-easyPieChart/dist/jquery.easypiechart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/bower-jquery-easyPieChart/src/easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/chartist/dist/chartist.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/chartist/dist/chartist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/chartist/dist/chartist.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/chartist/dist/chartist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/charts/chartlist/js/chartist-plugin-threshold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/charts/echarts/js/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/charts/nv-chart/js/stream_layers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/classie/classie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/countdown/js/jquery.countdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/countdown/js/jquery.counterup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/d3/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/d3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/d3/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/d3/d3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/d3/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/datepicker/js/moment-with-locales.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-slimscroll/jquery.slimscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/dist/jquery.sparkline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/dist/jquery.sparkline.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-box.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-bullet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-discrete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/chart-tristate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/interact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/rangemap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/simpledraw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/vcanvas-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/vcanvas-canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-sparkline/src/vcanvas-vml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery-ui/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jquery.nicescroll/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jscolor/arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jscolor/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jscolor/cross.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jscolor/hs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jscolor/hv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/jscolor/jscolor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/light-box/css/ekko-lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/light-box/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/light-box/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/light-box/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/light-box/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/light-box/js/ekko-lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/css/lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/css/lightbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/js/lightbox-plus-jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/js/lightbox-plus-jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/js/lightbox-plus-jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/js/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/js/lightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/dist/js/lightbox.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/src/css/lightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/src/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/src/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/src/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/src/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/lightbox2/src/js/lightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ar-dz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ar-ly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ar-ma.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ar-sa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ar-tn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/bo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/cv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/de-at.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/dv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/en-ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/en-nz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/es-do.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fr-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/fy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/gd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/hy-am.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/jv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/kk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/lb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/lo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/mi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/mr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ms-my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/nl-be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/nn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/pa-in.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/se.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sr-cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/te.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tl-ph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tlh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tzl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tzm-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/tzm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/uz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/x-pseudo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/yo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/zh-hk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/locale/zh-tw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/min/locales.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/min/locales.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/min/moment-with-locales.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/min/moment-with-locales.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/min/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/min/tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/check-overflow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/date-from-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/from-anything.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/from-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/from-object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/from-string-and-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/from-string-and-format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/from-string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/local.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/parsing-flags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/utc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/create/valid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/abs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/add-subtract.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/as.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/bubble.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/create.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/duration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/get.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/humanize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/iso-string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/duration/prototype.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/format/format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/base-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/invalid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/lists.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/locale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/locales.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/ordinal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/pre-post-format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/prototype.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/relative.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/locale/set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/add-subtract.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/clone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/compare.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/creation-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/diff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/from.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/get-set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/locale.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/min-max.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/now.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/prototype.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/start-end-of.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/to-type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/to.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/moment/valid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/parse/regex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/parse/token.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/aliases.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/day-of-month.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/day-of-week.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/day-of-year.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/hour.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/millisecond.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/minute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/month.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/offset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/priorities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/quarter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/second.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/timestamp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/timezone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/units.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/week-calendar-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/week-year.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/week.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/units/year.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/abs-ceil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/abs-floor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/abs-round.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/compare-arrays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/deprecate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/extend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/has-own-prop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/index-of.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-function.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-object-empty.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/is-undefined.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/keys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/some.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/to-int.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/lib/utils/zero-fill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ar-dz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ar-ly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ar-ma.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ar-sa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ar-tn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/bo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/cv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/de-at.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/dv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/en-ie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/en-nz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/es-do.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fr-ch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/fy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/gd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/hy-am.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/jv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/kk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/lb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/lo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/me.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/mi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/mr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ms-my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/nl-be.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/nn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/pa-in.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/se.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/si.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sr-cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/ta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/te.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tl-ph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tlh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tzl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tzm-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/tzm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/uz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/x-pseudo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/yo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/zh-hk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/locale/zh-tw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/moment/src/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/area-as-line.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/area.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/bar-colors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/bar-no-axes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/days.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/decimal-custom-hover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/diagonal-xlabels-bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/diagonal-xlabels.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/donut-colors.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/donut-formatter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/donut.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/dst.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/goals.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/lib/example.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/lib/example.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/months-no-smooth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/negative.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/no-grid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/non-continuous.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/non-date.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/quarters.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/resize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/stacked_bars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/timestamps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/updating.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/weeks.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/examples/years.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/morris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/morris.js/morris.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/multi-select/js/jquery.quicksearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/multiselect/css/multi-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/multiselect/img/switch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/multiselect/js/jquery.multi-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/notification/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/notification/css/notification.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/notification/js/bootstrap-growl.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/raphael/raphael.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/raphael/raphael.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/rickshaw.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/rickshaw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/rickshaw.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/rickshaw.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/css/detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/css/graph.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/css/legend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/helpers/endUMD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/helpers/startUMD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Class.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Color.Palette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Compat.ClassList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Fixtures.Color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Fixtures.Number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Fixtures.RandomData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Fixtures.Time.Local.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Fixtures.Time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Annotate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Axis.Time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Axis.X.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Axis.Y.Scaled.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Axis.Y.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Behavior.Series.Highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Behavior.Series.Order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Behavior.Series.Toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.HoverDetail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.JSONP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Legend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.RangeSlider.Preview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.RangeSlider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.LinePlot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Multi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.ScatterPlot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.Stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Renderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Smoother.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.Socketio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Graph.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Series.FixedDuration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.Series.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/src/js/Rickshaw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_01.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_02.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_03.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_04.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_05.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_06.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/example_07.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/introduction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/transform.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/transform_epoch.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/transform_region.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/vendor/prettify/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/tutorial/vendor/prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/vendor/d3.layout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/vendor/d3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/vendor/d3.v2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/rickshaw/vendor/d3.v3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/search/css/component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/search/img/magnifier.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/css/s2-docs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/css/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/css/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/dist/js/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/banner.end.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/banner.start.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/jquery.mousewheel.shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/jquery.select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/jquery.shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/containerCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/dropdownCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/initSelection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/inputData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/matcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/query.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/compat/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/maximumInputLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/maximumSelectionLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/minimumInputLength.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/tags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/data/tokenizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/diacritics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/attachBody.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/attachContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/closeOnSelect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/hidePlaceholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/infiniteScroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/minimumResultsForSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/selectOnClose.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/dropdown/stopPropagation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/keys.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/results.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/allowClear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/clickMask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/eventRelay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/multiple.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/single.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/selection/stopPropagation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/translation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/select2/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/wrapper.end.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/select2/src/js/wrapper.start.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/spectrum/spectrum.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/spectrum/spectrum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/syntaxhighlighter/scripts/shBrushJScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/syntaxhighlighter/scripts/shBrushXml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/syntaxhighlighter/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/syntaxhighlighter/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether-theme-arrows-dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether-theme-arrows-dark.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether-theme-arrows.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether-theme-arrows.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether-theme-basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether-theme-basic.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/css/tether.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/js/tether.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/dist/js/tether.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/helpers/_tether-theme-arrows.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/helpers/_tether-theme-basic.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/helpers/_tether.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/mixins/_inline-block.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/mixins/_pie-clearfix.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/tether-theme-arrows-dark.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/tether-theme-arrows.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/tether-theme-basic.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/css/tether.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/js/abutment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/js/constraint.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/js/markAttachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/js/shift.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/js/tether.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/tether/src/js/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/plugins/waypoints/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/_genral.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/generic-class.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/generic-class.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/generic-class.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/menu.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/menu.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/responsive.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scss/responsive.scss" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +1076,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ipl_dvs/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+              <folding>
+                <element signature="e#631#663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -74,20 +1141,20 @@
         <option value="$PROJECT_DIR$/players/data_reader.py" />
         <option value="$PROJECT_DIR$/players/charts_generator.py" />
         <option value="$PROJECT_DIR$/templates/players/index.html" />
-        <option value="$PROJECT_DIR$/ipl_dvs/settings.py" />
         <option value="$PROJECT_DIR$/data_files/teams.csv" />
         <option value="$PROJECT_DIR$/teams/chart_generator.py" />
         <option value="$PROJECT_DIR$/teams/urls.py" />
         <option value="$PROJECT_DIR$/teams/data_reader.py" />
         <option value="$PROJECT_DIR$/teams/views.py" />
         <option value="$PROJECT_DIR$/templates/teams/index.html" />
-        <option value="$PROJECT_DIR$/ipl_dvs/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/seasons/data_reader.py" />
         <option value="$PROJECT_DIR$/seasons/urls.py" />
         <option value="$PROJECT_DIR$/seasons/views.py" />
         <option value="$PROJECT_DIR$/templates/seasons/index.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/ipl_dvs/urls.py" />
+        <option value="$PROJECT_DIR$/ipl_dvs/settings.py" />
       </list>
     </option>
   </component>
@@ -110,6 +1177,11 @@
           <expand>
             <path>
               <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
               <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -367,11 +1439,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558350250710</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="deploy branch initial">
+      <created>1558431780307</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1558431780307</updated>
+    </task>
+    <task id="LOCAL-00025" summary="change in urls">
+      <created>1558431890437</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1558431890437</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122328000" />
+    <option name="totallyTimeSpent" value="127002000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -391,7 +1477,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.2569558" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.2569558" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,7 +1486,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.2569558" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4844517" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4844517" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -486,7 +1572,9 @@
     <MESSAGE value="basic setup of season app" />
     <MESSAGE value="top scores and wicket takers done." />
     <MESSAGE value="website review commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="website review commit" />
+    <MESSAGE value="deploy branch initial" />
+    <MESSAGE value="change in urls" />
+    <option name="LAST_COMMIT_MESSAGE" value="change in urls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,13 +1770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_files/batsman_runs.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -769,16 +1850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipl_dvs/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <element signature="e#631#663#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -848,6 +1919,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipl_dvs/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="28" column="6" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+          <folding>
+            <element signature="e#631#663#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
