@@ -16,7 +16,9 @@ def index(request):
     season_list = pd.read_csv('data_files/player_season.csv', delimiter=',')
     season_list = season_list[season_list['player'] == 'A Ashish Reddy']
     season_list.sort_values('season', inplace=True)
-    stadium_list = pd.read_csv('data_files/stadiums.csv', delimiter=',')
+    stadium_list = pd.read_csv('data_files/player_stadium.csv', delimiter=',')
+    stadium_list = stadium_list[stadium_list['player'] == 'A Ashish Reddy']
+    stadium_list.sort_values('stadium', inplace=True)
     top_10_wicket_table = pd.read_csv('data_files/top_10_wicket_takers.csv', delimiter=',')
     top_10_wicket_table = top_10_wicket_table.to_html(col_space=20, justify='left', index=False)
     stadium_list.sort_values('stadium', inplace=True)
@@ -96,3 +98,12 @@ def update_season_dropdown(request):
     season_list = season_list[season_list['player'] == player]
     season_list.sort_values('season', inplace=True)
     return JsonResponse(season_list['season'].tolist(), safe=False)
+
+
+@csrf_exempt
+def update_stadium_dropdown(request):
+    player = request.POST['player']
+    stadium_list = pd.read_csv('data_files/player_stadium.csv', delimiter=',')
+    stadium_list = stadium_list[stadium_list['player'] == player]
+    stadium_list.sort_values('stadium', inplace=True)
+    return JsonResponse(stadium_list['stadium'].tolist(), safe=False)
