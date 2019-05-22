@@ -134,7 +134,7 @@
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
                     <select class="js-example-basic-single" id="ddl_player_btsvs"
-                            onchange="updateSeasonddl();updateBatsmanVsSeason();">
+                            onchange="updateSeasonddl();">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -182,7 +182,7 @@
             </div>
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateStadiumddl();updateBatsmanVsStadium();">
+                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateStadiumddl()">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -369,7 +369,16 @@
             {% autoescape off %}
                 batsman_vs_stadium_data = {{ batsman_vs_stadium_data }}
             {% endautoescape %}
-        vegaEmbed('#batsman-vs-stadium', batsman_vs_stadium_data);
+            for (obj in batsman_vs_stadium_data['datasets']);
+                    if (batsman_vs_stadium_data['datasets'][obj].length>0) {
+                        document.getElementById('batsman-vs-stadium').innerHTML = '';
+                        vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                    }
+                    else{
+                        document.getElementById('batsman-vs-stadium').innerHTML = '<strong>No data available for this selection</strong>' ;
+                    }
         {% endif %}
         {% if wickets_vs_team_data %}
             {% autoescape off %}
@@ -445,10 +454,17 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-
-                    vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
+                    for (obj in data['datasets']);
+                    if (data['datasets'][obj].length>0) {
+                        document.getElementById('batsman-vs-stadium').innerHTML = '';
+                        vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
+                    }
+                    else{
+                        document.getElementById('batsman-vs-stadium').innerHTML = '<strong>No data available for this selection</strong>' ;
+                    }
+
                 }
             });
         }
@@ -509,6 +525,9 @@
                         $("#ddl_season_btsvs").append("<option value='" + season + "'>" + season + "</option>");
 
                     }
+                },
+                complete: function (data) {
+                    updateBatsmanVsSeason();
                 }
             });
 
@@ -528,11 +547,14 @@
                     var len = data.length;
                     $("#ddl_stadium_btsvst").empty();
                     for (var i = 0; i < len; i++) {
-                        var season = data[i];
+                        var stadium = data[i];
 
-                        $("#ddl_stadium_btsvst").append("<option value='" + season + "'>" + season + "</option>");
+                        $("#ddl_stadium_btsvst").append("<option value='" + stadium + "'>" + stadium + "</option>");
 
                     }
+                },
+                complete: function (data) {
+                    updateBatsmanVsStadium();
                 }
             });
 
