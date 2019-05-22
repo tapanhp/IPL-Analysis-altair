@@ -438,7 +438,7 @@ header .wrapper {
         align-items: center;
         @include o-f(hidden);
         white-space: nowrap;
-        background-image: url(../../ipl_dvs/static/images/extra-profile-bg.png);
+        background-image: url(../images/extra-profile-bg.png);
         background-size: cover;
         background-blend-mode: overlay;
         @include bg-c(rgba(0, 0, 0, .34));
