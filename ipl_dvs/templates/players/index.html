@@ -182,7 +182,7 @@
             </div>
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateBatsmanVsStadium()">
+                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateStadiumddl();updateBatsmanVsStadium();">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -502,14 +502,35 @@
                         alert(data.error_message);
                     }
                     var len = data.length;
-                    for (var i = 0; i < len; i++) {
-                        console.log(data[i]);
-                    }
                     $("#ddl_season_btsvs").empty();
                     for (var i = 0; i < len; i++) {
                         var season = data[i];
 
                         $("#ddl_season_btsvs").append("<option value='" + season + "'>" + season + "</option>");
+
+                    }
+                }
+            });
+
+        }
+
+        function updateStadiumddl() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvst').value
+                },
+                url: 'update_stadium_ddl/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    var len = data.length;
+                    $("#ddl_stadium_btsvst").empty();
+                    for (var i = 0; i < len; i++) {
+                        var season = data[i];
+
+                        $("#ddl_stadium_btsvst").append("<option value='" + season + "'>" + season + "</option>");
 
                     }
                 }
