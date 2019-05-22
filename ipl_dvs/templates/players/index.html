@@ -133,7 +133,8 @@
             </div>
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single" id="ddl_player_btsvs" onchange="updateBatsmanVsSeason()">
+                    <select class="js-example-basic-single" id="ddl_player_btsvs"
+                            onchange="updateSeasonddl();updateBatsmanVsSeason();">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -424,7 +425,7 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
+
                     vegaEmbed('#batsman-vs-season', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
@@ -444,13 +445,14 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
+
                     vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 }
             });
         }
+
         function updateWicketVsTeam() {
             $.ajax({
                 type: 'POST',
@@ -462,13 +464,14 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
+
                     vegaEmbed('#wickets-vs-team', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 }
             });
         }
+
         function updateWicketVsSeason() {
             $.ajax({
                 type: 'POST',
@@ -480,12 +483,38 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
                     vegaEmbed('#wickets-vs-season', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 }
             });
+        }
+
+        function updateSeasonddl() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvs').value
+                },
+                url: 'update_season_ddl/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    var len = data.length;
+                    for (var i = 0; i < len; i++) {
+                        console.log(data[i]);
+                    }
+                    $("#ddl_season_btsvs").empty();
+                    for (var i = 0; i < len; i++) {
+                        var season = data[i];
+
+                        $("#ddl_season_btsvs").append("<option value='" + season + "'>" + season + "</option>");
+
+                    }
+                }
+            });
+
         }
     </script>
 {% endblock %}
