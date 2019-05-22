@@ -1436,7 +1436,7 @@ Basic card CSS
  ======================= */
 .common-img-bg {
     height: 100%;
-    @include bg(url('../../ipl_dvs/static/images/authentication-bg.jpg') no-repeat);
+    @include bg(url('../images/authentication-bg.jpg') no-repeat);
     background-size: cover;
 }
 
@@ -3129,7 +3129,7 @@ input[type="checkbox"].green.ios-switch:checked + div > div {
     Coming soon page css start
 ======================= */
 .coming {
-    @include bg(url('../../ipl_dvs/static/images/masterhome.jpg')no-repeat);
+    @include bg(url('../images/masterhome.jpg')no-repeat);
     background-size: cover;
     @include pos(fixed);
     height: 100%;
@@ -4333,7 +4333,7 @@ $or:#2a363b;
 }
 
 .user-block-2 {
-    background-image: url("../../ipl_dvs/static/images/widget/user-block-2.jpg");
+    background-image: url("../images/widget/user-block-2.jpg");
     background-size: cover;
     @include p(20px 0);
     @include c(#fff);
@@ -4369,7 +4369,7 @@ $or:#2a363b;
 
 /*Clock css*/
 #clock {
-    background-image: url("../../ipl_dvs/static/images/widget/clock-bg.png");
+    background-image: url("../images/widget/clock-bg.png");
     height: 160px;
     @include pos(relative);
     width: 160px;
@@ -4698,7 +4698,7 @@ $or:#2a363b;
 }
 /*Weather block css*/
 .weather-bg {
-    background-image: url("../../ipl_dvs/static/images/widget/weather-bg.jpg");
+    background-image: url("../images/widget/weather-bg.jpg");
     background-size: cover;
     @include p(20px 0);
     @include c(#fff);

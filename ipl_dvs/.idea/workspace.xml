@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="allowed host and debug false">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipl_dvs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_dvs/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="4c03b52f-9118-496a-aa6b-fcaf7daa98c7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +12,33 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="156" column="33" lean-forward="true" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="126" column="45" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
+            <state relative-caret-position="196">
+              <caret line="122" column="20" lean-forward="true" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ipl_dvs/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding>
+                <element signature="e#631#663#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,14 +62,14 @@
       <find>.sidebar</find>
       <find>console</find>
       <find>grid</find>
-      <find>mkl-</find>
+      <find>jqu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="dev" />
+        <entry key="$PROJECT_DIR$/.." value="season_analysis" />
       </map>
     </option>
   </component>
@@ -77,13 +95,14 @@
         <option value="$PROJECT_DIR$/teams/data_reader.py" />
         <option value="$PROJECT_DIR$/teams/views.py" />
         <option value="$PROJECT_DIR$/templates/teams/index.html" />
-        <option value="$PROJECT_DIR$/ipl_dvs/urls.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/seasons/data_reader.py" />
         <option value="$PROJECT_DIR$/seasons/urls.py" />
         <option value="$PROJECT_DIR$/seasons/views.py" />
         <option value="$PROJECT_DIR$/templates/seasons/index.html" />
+        <option value="$PROJECT_DIR$/ipl_dvs/urls.py" />
         <option value="$PROJECT_DIR$/ipl_dvs/settings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -101,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,10 +127,22 @@
               <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
               <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ipl_dvs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ipl_dvs" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -130,14 +160,14 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\inexture\Python\git\pythontraining\Data_analysis\ipl_dvs_with_altair_django\ipl_dvs\ipl_dvs\static" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\inexture\Python\git\ipl-analysis-altair\ipl_dvs\data_files" />
       <recent name="G:\inexture\Python\git\pythontraining\Data_analysis\ipl_dvs_with_altair_django\ipl_dvs\ipl_dvs\static" />
       <recent name="G:\inexture\Python\git\pythontraining\Data_analysis\ipl_dvs_with_altair_django\ipl_dvs\ipl_dvs\static\images" />
       <recent name="G:\inexture\Python\git\pythontraining\Data_analysis\ipl_dvs_with_altair_django\ipl_dvs\static\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\inexture\Python\git\pythontraining\Data_analysis\ipl_dvs_with_altair_django\ipl_dvs\ipl_dvs\static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,32 +393,74 @@
       <option name="project" value="LOCAL" />
       <updated>1558350250710</updated>
     </task>
-    <task id="LOCAL-00024" summary="added requirements.txt">
-      <created>1558421225162</created>
+    <task id="LOCAL-00024" summary="deploy branch initial">
+      <created>1558431780307</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1558421225162</updated>
+      <updated>1558431780307</updated>
     </task>
-    <task id="LOCAL-00025" summary="allowed host and debug false">
-      <created>1558421610433</created>
+    <task id="LOCAL-00025" summary="change in urls">
+      <created>1558431890437</created>
       <option name="number" value="00025" />
       <option name="presentableId" value="LOCAL-00025" />
       <option name="project" value="LOCAL" />
-      <updated>1558421610433</updated>
+      <updated>1558431890437</updated>
     </task>
-    <task id="LOCAL-00026" summary="static change for docker">
-      <created>1558426780190</created>
+    <task id="LOCAL-00026" summary="static root changes">
+      <created>1558437084300</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1558426780190</updated>
+      <updated>1558437084300</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="static url changes">
+      <created>1558440099558</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1558440099558</updated>
+    </task>
+    <task id="LOCAL-00028" summary="added static files">
+      <created>1558440865164</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1558440865164</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added static files again with collectstatic cmd">
+      <created>1558441438401</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1558441438401</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fixed jquery path issue">
+      <created>1558442152467</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1558442152467</updated>
+    </task>
+    <task id="LOCAL-00031" summary="added cors origin permission">
+      <created>1558443577519</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1558443577519</updated>
+    </task>
+    <task id="LOCAL-00032" summary="updated requirements.txt">
+      <created>1558444155900</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1558444155900</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125910000" />
+    <option name="totallyTimeSpent" value="135929000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -401,9 +473,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.30635402" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756098" visible="true" weight="0.30484116" />
       <window_info id="Structure" order="1" sideWeight="0.502439" side_tool="true" weight="0.25718608" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -417,7 +488,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.2569558" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4844517" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.4844517" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,14 +545,6 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
             </State>
           </value>
         </entry>
@@ -506,11 +569,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/../../.." />
     </ignored-roots>
-    <MESSAGE value="initial commit, django project setup, theme setup, prepared base layout." />
-    <MESSAGE value="city wise match chart in home page" />
-    <MESSAGE value="added csv" />
-    <MESSAGE value="changes in base.html and urls" />
-    <MESSAGE value="added top batsman performance charts against team and overall" />
     <MESSAGE value="detailed analysis floating button" />
     <MESSAGE value="searchable dropdown with select 2" />
     <MESSAGE value="batsman vs team without filter done" />
@@ -527,10 +585,27 @@
     <MESSAGE value="basic setup of season app" />
     <MESSAGE value="top scores and wicket takers done." />
     <MESSAGE value="website review commit" />
-    <MESSAGE value="added requirements.txt" />
-    <MESSAGE value="allowed host and debug false" />
-    <MESSAGE value="static change for docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="static change for docker" />
+    <MESSAGE value="deploy branch initial" />
+    <MESSAGE value="change in urls" />
+    <MESSAGE value="static root changes" />
+    <MESSAGE value="static url changes" />
+    <MESSAGE value="added static files" />
+    <MESSAGE value="added static files again with collectstatic cmd" />
+    <MESSAGE value="fixed jquery path issue" />
+    <MESSAGE value="added cors origin permission" />
+    <MESSAGE value="updated requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated requirements.txt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/ipl_dvs/static/js/altair_embedding.js</url>
+          <line>1</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -617,6 +692,16 @@
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="19" selection-start-line="163" selection-start-column="19" selection-end-line="163" selection-end-column="19" />
+          <folding>
+            <element signature="n#block#1;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -785,22 +870,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ipl_dvs/urls.py">
+    <entry file="file://$PROJECT_DIR$/seasons/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="102">
+          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
           <folding>
-            <element signature="e#631#663#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seasons/urls.py">
+    <entry file="file://$PROJECT_DIR$/seasons/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="76" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
+        <state relative-caret-position="340">
+          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -809,6 +894,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/seasons/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1741">
+          <caret line="104" column="35" selection-start-line="104" selection-start-column="35" selection-end-line="104" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -821,7 +913,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/teams/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3723">
+        <state relative-caret-position="233">
           <caret line="219" column="35" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
         </state>
       </provider>
@@ -836,50 +928,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seasons/views.py">
+    <entry file="file://$PROJECT_DIR$/ipl_dvs/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="85" selection-start-line="24" selection-start-column="85" selection-end-line="24" selection-end-column="85" />
+        <state relative-caret-position="131">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/seasons/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
-          <folding>
-            <element signature="e#1267#1998#0#HTML" />
-            <element signature="e#2014#2743#0#HTML" />
-            <element signature="e#2748#3485#0#HTML" />
-            <element signature="e#3490#4248#0#HTML" />
+            <element signature="e#631#663#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="94" column="21" selection-start-line="94" selection-start-column="21" selection-end-line="94" selection-end-column="21" />
+        <state relative-caret-position="126">
+          <caret line="156" column="33" lean-forward="true" selection-start-line="156" selection-start-column="33" selection-end-line="156" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dashboard/index.html">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2601">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
-          <folding>
-            <element signature="n#block#1;n#!!top" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ipl_dvs/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="126" column="45" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
+        <state relative-caret-position="196">
+          <caret line="122" column="20" lean-forward="true" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
         </state>
       </provider>
     </entry>
