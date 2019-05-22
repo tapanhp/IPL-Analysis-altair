@@ -200,7 +200,7 @@ def wickets_vs_season(player):
 
 def captains():
     captain_win_bar = alt.Chart(dr.captain_win_loss).mark_bar(color='steelblue', opacity=0.8).encode(
-        x='sum(wins):Q',
+        x=alt.X('sum(wins):Q', axis=alt.Axis(title='wins and loses')),
         y='player:N',
         tooltip=['player', 'total', 'wins']
     )
