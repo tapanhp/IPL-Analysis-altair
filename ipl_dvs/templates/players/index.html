@@ -133,7 +133,8 @@
             </div>
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single" id="ddl_player_btsvs" onchange="updateBatsmanVsSeason()">
+                    <select class="js-example-basic-single" id="ddl_player_btsvs"
+                            onchange="updateSeasonddl();">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -181,7 +182,7 @@
             </div>
             <div class="card-block row">
                 <div class="col-sm-12 col-md-5">
-                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateBatsmanVsStadium()">
+                    <select class="js-example-basic-single" id="ddl_player_btsvst" onchange="updateStadiumddl()">
                         {% if player_list %}
                             {% for player in player_list %}
                                 <option value="{{ player }}">{{ player }}</option>
@@ -368,7 +369,16 @@
             {% autoescape off %}
                 batsman_vs_stadium_data = {{ batsman_vs_stadium_data }}
             {% endautoescape %}
-        vegaEmbed('#batsman-vs-stadium', batsman_vs_stadium_data);
+            for (obj in batsman_vs_stadium_data['datasets']);
+                    if (batsman_vs_stadium_data['datasets'][obj].length>0) {
+                        document.getElementById('batsman-vs-stadium').innerHTML = '';
+                        vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
+                        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                    }).catch(console.error);
+                    }
+                    else{
+                        document.getElementById('batsman-vs-stadium').innerHTML = '<strong>No data available for this selection</strong>' ;
+                    }
         {% endif %}
         {% if wickets_vs_team_data %}
             {% autoescape off %}
@@ -424,7 +434,7 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
+
                     vegaEmbed('#batsman-vs-season', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
@@ -444,13 +454,21 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
-                    vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
+                    for (obj in data['datasets']);
+                    if (data['datasets'][obj].length>0) {
+                        document.getElementById('batsman-vs-stadium').innerHTML = '';
+                        vegaEmbed('#batsman-vs-stadium', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
+                    }
+                    else{
+                        document.getElementById('batsman-vs-stadium').innerHTML = '<strong>No data available for this selection</strong>' ;
+                    }
+
                 }
             });
         }
+
         function updateWicketVsTeam() {
             $.ajax({
                 type: 'POST',
@@ -462,13 +480,14 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
+
                     vegaEmbed('#wickets-vs-team', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 }
             });
         }
+
         function updateWicketVsSeason() {
             $.ajax({
                 type: 'POST',
@@ -480,12 +499,65 @@
                     if (data.is_taken) {
                         alert(data.error_message);
                     }
-                    console.log(data);
                     vegaEmbed('#wickets-vs-season', data).then(function (result) {
                         // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
                     }).catch(console.error);
                 }
             });
+        }
+
+        function updateSeasonddl() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvs').value
+                },
+                url: 'update_season_ddl/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    var len = data.length;
+                    $("#ddl_season_btsvs").empty();
+                    for (var i = 0; i < len; i++) {
+                        var season = data[i];
+
+                        $("#ddl_season_btsvs").append("<option value='" + season + "'>" + season + "</option>");
+
+                    }
+                },
+                complete: function (data) {
+                    updateBatsmanVsSeason();
+                }
+            });
+
+        }
+
+        function updateStadiumddl() {
+            $.ajax({
+                type: 'POST',
+                data: {
+                    player: document.getElementById('ddl_player_btsvst').value
+                },
+                url: 'update_stadium_ddl/',
+                success: function (data) {
+                    if (data.is_taken) {
+                        alert(data.error_message);
+                    }
+                    var len = data.length;
+                    $("#ddl_stadium_btsvst").empty();
+                    for (var i = 0; i < len; i++) {
+                        var stadium = data[i];
+
+                        $("#ddl_stadium_btsvst").append("<option value='" + stadium + "'>" + stadium + "</option>");
+
+                    }
+                },
+                complete: function (data) {
+                    updateBatsmanVsStadium();
+                }
+            });
+
         }
     </script>
 {% endblock %}
