@@ -36,7 +36,9 @@ def batsman_vs_team(player, team):
         opacity=alt.condition(~highlight, alt.value(0.7), alt.value(0.7)),
         size=alt.condition(~highlight, alt.value(2), alt.value(2))
     )
-    return batsman_vs_team_points + batsman_vs_team_lines
+    return (batsman_vs_team_points + batsman_vs_team_lines).configure_axis(
+        labels=False
+    )
 
 
 def top_runs_all_season():
@@ -111,7 +113,9 @@ def batsman_vs_season(player, season):
         opacity=alt.condition(~highlight, alt.value(0.7), alt.value(0.7)),
         size=alt.condition(~highlight, alt.value(2), alt.value(2))
     )
-    return batsman_vs_season_points + batsman_vs_season_lines
+    return (batsman_vs_season_points + batsman_vs_season_lines).configure_axis(
+        labels=False
+    )
 
 
 def batsman_vs_stadium(player, stadium):
