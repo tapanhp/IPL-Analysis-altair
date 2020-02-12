@@ -25,7 +25,7 @@
     "node": ">= 4.0.0"
   },
   "devDependencies": {
-    "clean-css": "^3.4.10",
+    "clean-css": "^4.2.3",
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
     "jsdom": "^8.1.0",
