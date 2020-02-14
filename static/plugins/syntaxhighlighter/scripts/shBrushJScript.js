@@ -17,7 +17,7 @@
 ;(function()
 {
 	// CommonJS
-	typeof(require) != 'undefined' ? SyntaxHighlighter = require('ipl_dvs/static/plugins/syntaxhighlighter/scripts/shCore').SyntaxHighlighter : null;
+	typeof(require) != 'undefined' ? SyntaxHighlighter = require('new/static/plugins/syntaxhighlighter/scripts/shCore').SyntaxHighlighter : null;
 
 	function Brush()
 	{
