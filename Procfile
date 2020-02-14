@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn chat_app.wsgi
+web: gunicorn ipl_dvs.wsgi
