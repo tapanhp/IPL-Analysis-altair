@@ -25,7 +25,7 @@ UPLOAD_TO_HEROKU = True
 SECRET_KEY = '@y76ncclh3bs(39sbtc6*9sb1b)_1k^jj5kd@^-snegefw^1(='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -86,7 +86,7 @@ if DEBUG:
         }
     }
 
-elif UPLOAD_TO_HEROKU:
+if UPLOAD_TO_HEROKU:
     import dj_database_url
 
     DATABASES = {'default': dj_database_url.config(conn_max_age=600, ssl_require=True)}
